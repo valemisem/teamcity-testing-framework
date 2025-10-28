@@ -18,7 +18,7 @@
 #Accept: application/json
 
 #### STEPS for creating a build configuration: Step 1: create project. if 403 - comment previous calls to not have previos cookies.
-## @no-cookie-jar
+
 #POST http://{{user}}:{{password}}@{{host}}:{{port}}/app/rest/projects
 #Content-Type: application/json
 #Accept: application/json
