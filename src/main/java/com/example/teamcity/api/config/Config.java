@@ -29,7 +29,7 @@ public class Config {
             properties.load(stream);
 
         } catch (IOException e) {
-            System.err.println("UError while file reading " + fileName);
+            System.err.println("Error while file reading " + fileName);
             throw new RuntimeException(e);
         }
     }

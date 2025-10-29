@@ -4,7 +4,6 @@ import com.example.teamcity.api.config.Config;
 import com.example.teamcity.api.models.User;
 import io.restassured.authentication.BasicAuthScheme;
 import io.restassured.builder.RequestSpecBuilder;
-import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
@@ -14,7 +13,10 @@ import java.util.List;
 
 public class Specifications {
     private static Specifications spec;
-    private Specifications() {}
+
+    private Specifications() {
+    }
+
     public static Specifications getSpec() {
         if (spec == null) {
             spec = new Specifications();
@@ -35,10 +37,10 @@ public class Specifications {
         return reqBuilder().build();
     }
 
-    public RequestSpecification authSpec(User user) {
+    public RequestSpecification authSpec(User username) {
         BasicAuthScheme basicAuthScheme = new BasicAuthScheme();
-        basicAuthScheme.setUserName(user.getUser());
-        basicAuthScheme.setPassword(user.getPassword());
+        basicAuthScheme.setUserName(username.getUsername());
+        basicAuthScheme.setPassword(username.getPassword());
         return reqBuilder()
                 .setAuth(basicAuthScheme)
                 .build();
