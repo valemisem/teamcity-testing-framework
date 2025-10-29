@@ -1,0 +1,7 @@
+### GET build by BuildTypeId
+GET http://admin:admin@192.168.1.38:8111/app/rest/buildTypes/id:buildType1
+Accept: application/json
+
+###
+
+// docker run --rm -it -v "C:\Users\user\IdeaProjects\teamcity-testing-framework\request-examples:/workdir" jetbrains/intellij-http-client getRequests.http -L VERBOSE

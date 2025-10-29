@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class User {
+public class User extends BaseModel {
     private String username;
     private String password;
 }
