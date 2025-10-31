@@ -46,4 +46,15 @@ public class Specifications {
                 .build();
 
     }
+
+    public RequestSpecification superUserAuth() {
+        BasicAuthScheme basicAuthScheme = new BasicAuthScheme();
+        basicAuthScheme.setUserName(""); // empty username
+        basicAuthScheme.setPassword(Config.getProperty("superUserToken"));
+        return reqBuilder()
+                .setAuth(basicAuthScheme)
+                .build();
+
+
+    }
 }

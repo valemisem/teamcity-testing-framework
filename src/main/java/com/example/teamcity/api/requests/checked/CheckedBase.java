@@ -18,11 +18,13 @@ public final class CheckedBase<T extends BaseModel> extends Request implements C
     }
 
     @Override
-    public T create(BaseModel model) {
+    public T create(BaseModel model) { // Метод create принимает в аргумент модель (например, User),
+      //  отправляет её в API, и возвращает объект того же типа T (User)
         return (T) uncheckedBase
                 .create(model)
                 .then().assertThat().statusCode(HttpStatus.SC_OK)
-                .extract().as(endpoint.getModelClass());
+                .extract().as(endpoint.getModelClass()); // Конвертирует JSON-ответ обратно в объект типа User
+        // десериализация JSON → объект
     }
 
     @Override

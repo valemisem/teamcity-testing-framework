@@ -12,7 +12,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class Steps {
+public class Steps extends BaseModel {
     private Integer count;
     private List<Step> step;
 }
