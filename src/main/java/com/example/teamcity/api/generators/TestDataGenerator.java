@@ -55,7 +55,7 @@ public final class TestDataGenerator {
                         parameters = Arrays.copyOfRange(parameters, 1, parameters.length);
                     } else if (field.isAnnotationPresent(Random.class)) {
                         if (String.class.equals(field.getType())) {
-                            field.set(instance, RandomData.getString());
+                            field.set(instance, RandomData.getString()); // можем добавить такой же If на integer
                         }
                     } else if (BaseModel.class.isAssignableFrom(field.getType())) {
                         var finalParameters = parameters;
