@@ -17,6 +17,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 
 public class BuildType extends BaseModel {
+    @Random
     private String id;
     @Random
     private String name;
