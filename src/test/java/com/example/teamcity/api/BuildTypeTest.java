@@ -25,12 +25,7 @@ public class BuildTypeTest extends BaseApiTest {
         var userCheckRequests = new CheckedRequests(Specifications.getSpec().authSpec(testData.getUser()));
         userCheckRequests.<Project>getRequest(PROJECT).create(testData.getProject());
         userCheckRequests.getRequest(BUILD_TYPES).create(testData.getBuildType());
-        var createdBuildType = userCheckRequests.<BuildType>getRequest(BUILD_TYPES).read(testData.getBuildType().getId()); // обратились к чтению билд тайп айДи
-        // This time, T = BuildType, so return a BuildType object.
-        // because getRequest() is generic
-        // We convert T into a specific type (e.g. Project) so the generic method knows
-        // which model class to work with and returns the correct typed object
-
+        var createdBuildType = userCheckRequests.<BuildType>getRequest(BUILD_TYPES).read(testData.getBuildType().getId());
         softy.assertEquals(testData.getBuildType().getName(), createdBuildType.getName(), "BuildType name does not match");
     }
 
@@ -38,14 +33,9 @@ public class BuildTypeTest extends BaseApiTest {
     public void userCreatesTwoBuildTypesWithTheSameIdTest() {
         superUserCheckRequests.getRequest(USERS).create(testData.getUser());
         var userCheckRequests = new CheckedRequests(Specifications.getSpec().authSpec(testData.getUser()));
-
         userCheckRequests.<Project>getRequest(PROJECT).create(testData.getProject());
-
         var buildTypeWithSameId = generate(Arrays.asList(testData.getProject()), BuildType.class, testData.getBuildType().getId());
-        // Id - parametrizable, в метод generate передаём параметр
         userCheckRequests.getRequest(BUILD_TYPES).create(testData.getBuildType());
-
-        // for negative test - I use UncheckedBase
         new UncheckedBase(Specifications.getSpec().authSpec(testData.getUser()), BUILD_TYPES).create(buildTypeWithSameId)
                 .then().assertThat().statusCode(HttpStatus.SC_BAD_REQUEST)
                 .body(Matchers.containsString("The build configuration / template ID \"%s\" is already used by another configuration or template".formatted(testData.getBuildType().getId())));
