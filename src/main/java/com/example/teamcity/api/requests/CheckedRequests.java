@@ -18,6 +18,7 @@ public class CheckedRequests {
 
     public <T extends BaseModel> CheckedBase<T> getRequest(Endpoint endpoint) {
         return (CheckedBase<T>) requests.get(endpoint);
+        // This method works with any type T you give me
     }
 
 }

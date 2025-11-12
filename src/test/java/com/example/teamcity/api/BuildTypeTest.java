@@ -22,7 +22,7 @@ public class BuildTypeTest extends BaseApiTest {
         superUserCheckRequests.getRequest(USERS).create(user); // сгенерировали юзера, сгенерировали запрос для юзера и отправили
         // запрос по созданию юзера
 
-        var userCheckRequests = new CheckedRequests(Specifications.authSpec(user));
+        var userCheckRequests = new CheckedRequests(Specifications.getSpec().authSpec(user));
         var project = generate(Project.class); // сгенерировали проект
         /**
          * Создаёт объект Project со случайными тестовыми данными (например имя, ID)
@@ -36,7 +36,12 @@ public class BuildTypeTest extends BaseApiTest {
 
         userCheckRequests.getRequest(BUILD_TYPES).create(buildType);
 
-        var createdBuildType =  userCheckRequests.<BuildType>getRequest(BUILD_TYPES).read(buildType.getId()); // обратились к чтению билд тайп айДи
+        var createdBuildType = userCheckRequests.<BuildType>getRequest(BUILD_TYPES).read(buildType.getId()); // обратились к чтению билд тайп айДи
+        // This time, T = BuildType, so return a BuildType object.
+        // because getRequest() is generic
+        // We convert T into a specific type (e.g. Project) so the generic method knows
+        // which model class to work with and returns the correct typed object
+
         softy.assertEquals(buildType.getName(), createdBuildType.getName(), "BuildType name does not match");
         // убедились, что все данные были созданы корректно
 
