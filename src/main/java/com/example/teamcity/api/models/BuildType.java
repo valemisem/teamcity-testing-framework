@@ -18,6 +18,7 @@ import lombok.NoArgsConstructor;
 
 public class BuildType extends BaseModel {
     @Random
+    @Parameterizable
     private String id;
     @Random
     private String name;
