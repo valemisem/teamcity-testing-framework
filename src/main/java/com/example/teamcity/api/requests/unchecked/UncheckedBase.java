@@ -11,7 +11,7 @@ import io.restassured.specification.RequestSpecification;
 public class UncheckedBase extends Request implements CrudInterface {
     public UncheckedBase(RequestSpecification spec, Endpoint endpoint) { // параметризирован по спецификации и эндпоинту
         super(spec, endpoint);
-    }
+    } // Call parent's constructor to initialize shared fields (spec and endpoint)
 
     @Override
     public Response create(BaseModel model) {

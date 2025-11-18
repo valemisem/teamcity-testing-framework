@@ -13,9 +13,8 @@ public class DummyTest extends BaseApiTest {
                 .spec(Specifications.getSpec()
                         .authSpec(User.builder()
                                 .username("admin").password("admin")
-                                .build()))
+                                .build())) // ООП билдер
                 .get("/app/rest/projects");
-
 
     }
 }

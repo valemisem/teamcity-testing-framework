@@ -18,8 +18,8 @@ import static io.qameta.allure.Allure.step;
 
 @Test(groups = {"Regression"})
 public class BuildTypeTest extends BaseApiTest {
-    @Test(description = "User should be able to create build type", groups = {"Positive", "CRUD"})
 
+    @Test(description = "User should be able to create build type", groups = {"Positive", "CRUD"})
     public void userCreatesBuildTypeTest() {
         superUserCheckRequests.getRequest(USERS).create(testData.getUser());
         var userCheckRequests = new CheckedRequests(Specifications.getSpec().authSpec(testData.getUser()));

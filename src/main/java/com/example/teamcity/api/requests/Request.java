@@ -8,8 +8,9 @@ public class Request {
      * Request - это класс, описывающий меняющиеся параменты запроса, такие как:
      * спецификация, эндпоинт (relative URL, model)
      */
-    protected final RequestSpecification spec; // объявление переменных
-    protected final Endpoint endpoint; // это переменные, которые принадлежат каждому объекту этого класса
+    // объявление переменных. это переменные, которые принадлежат каждому объекту этого класса
+    protected final RequestSpecification spec; // авторизация, baseUrl, фильтры, хедеры
+    protected final Endpoint endpoint; // путь и модель
 
     // RequestSpecification и Endpoint — это типы данных
     // spec и endpoint — это переменные этих типов
@@ -18,5 +19,6 @@ public class Request {
         this.spec = spec;
         this.endpoint = endpoint;
     }
-
 }
+
+// Это универсальный запрос, который знает, куда идти и какой моделью пользоваться.
