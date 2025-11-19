@@ -16,4 +16,9 @@ public final class RandomData {
                 .randomAlphabetic(Math.max(length - TEST_PREFIX.length(), MAX_LENGTH));
 
     }
+
+    public static String getStringDigits(int length) {
+        return RandomStringUtils.randomNumeric(length);
+    }
+
 }

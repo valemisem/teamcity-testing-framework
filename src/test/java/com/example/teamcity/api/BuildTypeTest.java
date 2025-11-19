@@ -22,9 +22,12 @@ public class BuildTypeTest extends BaseApiTest {
     @Test(description = "User should be able to create build type", groups = {"Positive", "CRUD"})
     public void userCreatesBuildTypeTest() {
         superUserCheckRequests.getRequest(USERS).create(testData.getUser());
+
         var userCheckRequests = new CheckedRequests(Specifications.getSpec().authSpec(testData.getUser()));
+
         userCheckRequests.<Project>getRequest(PROJECT).create(testData.getProject());
         userCheckRequests.getRequest(BUILD_TYPES).create(testData.getBuildType());
+
         var createdBuildType = userCheckRequests.<BuildType>getRequest(BUILD_TYPES).read(testData.getBuildType().getId());
         softy.assertEquals(testData.getBuildType().getName(), createdBuildType.getName(), "BuildType name does not match");
     }
@@ -32,10 +35,14 @@ public class BuildTypeTest extends BaseApiTest {
     @Test(description = "User should not be able to create two build types with the same Id", groups = {"Negative", "CRUD"})
     public void userCreatesTwoBuildTypesWithTheSameIdTest() {
         superUserCheckRequests.getRequest(USERS).create(testData.getUser());
+
         var userCheckRequests = new CheckedRequests(Specifications.getSpec().authSpec(testData.getUser()));
+
         userCheckRequests.<Project>getRequest(PROJECT).create(testData.getProject());
+
         var buildTypeWithSameId = generate(Arrays.asList(testData.getProject()), BuildType.class, testData.getBuildType().getId());
         userCheckRequests.getRequest(BUILD_TYPES).create(testData.getBuildType());
+
         new UncheckedBase(Specifications.getSpec().authSpec(testData.getUser()), BUILD_TYPES).create(buildTypeWithSameId)
                 .then().assertThat().statusCode(HttpStatus.SC_BAD_REQUEST)
                 .body(Matchers.containsString("The build configuration / template ID \"%s\" is already used by another configuration or template".formatted(testData.getBuildType().getId())));
