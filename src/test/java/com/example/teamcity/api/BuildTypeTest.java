@@ -93,5 +93,22 @@ public class BuildTypeTest extends BaseApiTest {
                 ));
     }
 
-//    @Test(description = "Project admin should be able to create build type for their project", groups = {"Positive", "Roles", "BuildType"})
+    @Test(description = "Project admin should be able to create build type for their project", groups = {"Positive", "Roles", "BuildType"})
+    public void projectAdminCreatesBuildTypeForTheirProjectTest() {
+        superUserCheckRequests.getRequest(PROJECT).create(testData.getProject());
+        var role = Role.builder().roleId("PROJECT_ADMIN").scope("p:" + testData.getProject().getId()).build();
+        var roles = Roles.builder().role(List.of(role)).build();
+        testData.getUser().setRoles(roles);
+
+        superUserCheckRequests.getRequest(USERS).create(testData.getUser());
+
+        var requests = new CheckedRequests(Specifications.getSpec().authSpec(testData.getUser()));
+        var buildType = generate(Arrays.asList(testData.getProject()), BuildType.class); // Это BuildType, который реально ушёл в запрос
+        var createdBuildType = requests.<BuildType>getRequest(BUILD_TYPES).create(buildType);
+        softy.assertEquals(buildType.getName(), createdBuildType.getName(), "BuildType name does not match");
+        // testData.getBuildType() - Этот BuildType создаётся в TestData при инициализации,
+        // У него ДРУГОЕ случайное name, Он не участвовал в запросе
+        // buildType = то, что ты отправила
+        //createdBuildType = то, что вернул сервер
+    }
 }
