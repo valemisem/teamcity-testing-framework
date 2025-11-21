@@ -53,7 +53,11 @@ public class BuildTypeTest extends BaseApiTest {
     @Test(description = "Project admin should not be able to create build type for not their project", groups = {"Negative", "Roles", "BuildType"})
     public void projectAdminCreatesBuildTypeForAnotherUserProjectTest() {
 
-        var createdProject1 = superUserCheckRequests.<Project>getRequest(PROJECT).create(testData.getProject());
+        var createdProject1 = superUserCheckRequests.<Project>getRequest(PROJECT).create(testData.getProject()); // Это ОТПРАВКА проекта на сервер TeamCity
+        //project уже был сгенерирован заранее в TestData
+        //он не меняется
+        //у него ВСЕГДА одинаковые name, id, locator (которые сгенерировались один раз)
+
         createdProject1.getId();
 
         var role = Role.builder()
@@ -83,7 +87,7 @@ public class BuildTypeTest extends BaseApiTest {
         testData.getAnotherUser().setRoles(roles2);
         superUserCheckRequests.getRequest(USERS).create(testData.getAnotherUser());
 
-        var buildTypeForForeignProject = generate(Arrays.asList(createdProject1), BuildType.class);
+        var buildTypeForForeignProject = generate(Arrays.asList(createdProject1), BuildType.class); // generate - это создание локального Java-объекта с тестовыми данными (но БЕЗ HTTP-запроса)
 
         new UncheckedBase(Specifications.getSpec().authSpec(testData.getAnotherUser()), BUILD_TYPES)
                 .create(buildTypeForForeignProject)
@@ -104,11 +108,18 @@ public class BuildTypeTest extends BaseApiTest {
 
         var requests = new CheckedRequests(Specifications.getSpec().authSpec(testData.getUser()));
         var buildType = generate(Arrays.asList(testData.getProject()), BuildType.class); // Это BuildType, который реально ушёл в запрос
-        var createdBuildType = requests.<BuildType>getRequest(BUILD_TYPES).create(buildType);
-        softy.assertEquals(buildType.getName(), createdBuildType.getName(), "BuildType name does not match");
+        requests.<BuildType>getRequest(BUILD_TYPES).create(buildType);
         // testData.getBuildType() - Этот BuildType создаётся в TestData при инициализации,
         // У него ДРУГОЕ случайное name, Он не участвовал в запросе
         // buildType = то, что ты отправила
         //createdBuildType = то, что вернул сервер
+
+        // now we can do a GET request and get name from GET request!!
+        var createdBuildType = requests.<BuildType>getRequest(BUILD_TYPES).read(buildType.getId());
+        // assert!
+        softy.assertEquals(buildType.getName(), createdBuildType.getName(), "BuildType name does not match");
+        // сюда же можно добавить и assert все важные для нас поля, не только имя
+        // ассерт - имя, которое отправили в POST и имя, которое получили по GET
+
     }
 }
