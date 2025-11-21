@@ -2,7 +2,8 @@ package com.example.teamcity.api;
 
 import com.example.teamcity.api.models.BuildType;
 import com.example.teamcity.api.models.Project;
-import com.example.teamcity.api.models.User;
+import com.example.teamcity.api.models.Role;
+import com.example.teamcity.api.models.Roles;
 import com.example.teamcity.api.requests.CheckedRequests;
 import com.example.teamcity.api.requests.unchecked.UncheckedBase;
 import com.example.teamcity.api.spec.Specifications;
@@ -11,10 +12,10 @@ import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 
 import java.util.Arrays;
+import java.util.List;
 
 import static com.example.teamcity.api.enums.Endpoint.*;
 import static com.example.teamcity.api.generators.TestDataGenerator.generate;
-import static io.qameta.allure.Allure.step;
 
 @Test(groups = {"Regression"})
 public class BuildTypeTest extends BaseApiTest {
@@ -48,28 +49,49 @@ public class BuildTypeTest extends BaseApiTest {
                 .body(Matchers.containsString("The build configuration / template ID \"%s\" is already used by another configuration or template".formatted(testData.getBuildType().getId())));
     }
 
-    @Test(description = "Project admin should be able to create build type for their project", groups = {"Positive", "Roles"})
-    public void projectAdminCreatesBuildTypeTest() {
-        step("Create user");
-        step("Create project by user");
-        step("Grant user PROJECT_ADMIN role in project");
 
-        step("Create buildType for project by user");
-        step("Check buildType was created successfully");
-
-    }
-
-    @Test(description = "Project admin should not be able to create build type for not their project", groups = {"Negative", "Roles"})
+    @Test(description = "Project admin should not be able to create build type for not their project", groups = {"Negative", "Roles", "BuildType"})
     public void projectAdminCreatesBuildTypeForAnotherUserProjectTest() {
-        step("Create user1");
-        step("Create project1 by user1");
-        step("Grant user1 PROJECT_ADMIN role in project1");
 
-        step("Create user2");
-        step("Create project2 by user2");
-        step("Grant user2 PROJECT_ADMIN role in project2");
+        var createdProject1 = superUserCheckRequests.<Project>getRequest(PROJECT).create(testData.getProject());
+        createdProject1.getId();
 
-        step("Create buildType for project1 by user2");
-        step("Check buildType was not created with forbidden code");
+        var role = Role.builder()
+                .roleId("PROJECT_ADMIN")
+                .scope("p:" + createdProject1.getId())
+                .build();
+
+        var roles = Roles.builder()
+                .role(List.of(role))
+                .build();
+
+        testData.getUser().setRoles(roles);
+        superUserCheckRequests.getRequest(USERS).create(testData.getUser());
+
+        var createdProject2 = superUserCheckRequests.<Project>getRequest(PROJECT).create(testData.getAnotherProject());
+        createdProject2.getId();
+
+        var role2 = Role.builder()
+                .roleId("PROJECT_ADMIN")
+                .scope("p:" + createdProject2.getId())
+                .build();
+
+        var roles2 = Roles.builder()
+                .role(List.of(role2))
+                .build();
+
+        testData.getAnotherUser().setRoles(roles2);
+        superUserCheckRequests.getRequest(USERS).create(testData.getAnotherUser());
+
+        var buildTypeForForeignProject = generate(Arrays.asList(createdProject1), BuildType.class);
+
+        new UncheckedBase(Specifications.getSpec().authSpec(testData.getAnotherUser()), BUILD_TYPES)
+                .create(buildTypeForForeignProject)
+                .then().assertThat().statusCode(HttpStatus.SC_FORBIDDEN)
+                .body(Matchers.containsString(
+                        "You do not have enough permissions to edit project with id: " + createdProject1.getId()
+                ));
     }
+
+//    @Test(description = "Project admin should be able to create build type for their project", groups = {"Positive", "Roles", "BuildType"})
 }
