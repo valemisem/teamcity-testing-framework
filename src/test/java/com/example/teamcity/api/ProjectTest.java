@@ -3,6 +3,7 @@ package com.example.teamcity.api;
 import com.example.teamcity.api.enums.Endpoint;
 import com.example.teamcity.api.models.Project;
 import com.example.teamcity.api.requests.CheckedRequests;
+import com.example.teamcity.api.requests.UncheckedRequests;
 import com.example.teamcity.api.requests.unchecked.UncheckedBase;
 import com.example.teamcity.api.spec.Specifications;
 import org.apache.http.HttpStatus;
@@ -80,6 +81,21 @@ public class ProjectTest extends BaseApiTest {
 
         response.then().assertThat().statusCode(HttpStatus.SC_INTERNAL_SERVER_ERROR)
                 .body(Matchers.containsString("Project ID \"" + invalidId + "\" is invalid"));
+    }
+
+    public void userCreatesProjectWithEmptyIdTest() {
+        superUserCheckRequests.getRequest(Endpoint.USERS).create(testData.getUser());
+        var invalidId = "";
+        var project1 = generate(Project.class, invalidId);
+
+        var response = new UncheckedBase(Specifications.getSpec().authSpec(testData.getUser()), Endpoint.PROJECT)
+                .create(project1);
+        response.then().assertThat().statusCode(HttpStatus.SC_INTERNAL_SERVER_ERROR)
+                .body(Matchers.containsString("Project ID must not be empty."));
+
+        var checkResponse = new UncheckedRequests(Specifications.getSpec().authSpec(testData.getUser()));
+        checkResponse.getRequest(Endpoint.PROJECT).read(project1.getId())
+                .then().assertThat().statusCode(HttpStatus.SC_NOT_FOUND);
     }
 }
 

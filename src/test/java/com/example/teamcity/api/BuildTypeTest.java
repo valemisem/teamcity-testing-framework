@@ -52,7 +52,8 @@ public class BuildTypeTest extends BaseApiTest {
 
     @Test(description = "Project admin should not be able to create build type for not their project", groups = {"Negative", "Roles", "BuildType"})
     public void projectAdminCreatesBuildTypeForAnotherUserProjectTest() {
-
+        /// /// create a project, set roles for user in Test Data, create a user (send it to the server)
+        // Step "createUserForProject()"
         var createdProject1 = superUserCheckRequests.<Project>getRequest(PROJECT).create(testData.getProject()); // Это ОТПРАВКА проекта на сервер TeamCity
         //project уже был сгенерирован заранее в TestData
         //он не меняется
@@ -71,7 +72,7 @@ public class BuildTypeTest extends BaseApiTest {
 
         testData.getUser().setRoles(roles);
         superUserCheckRequests.getRequest(USERS).create(testData.getUser());
-
+        /// ///
         var createdProject2 = superUserCheckRequests.<Project>getRequest(PROJECT).create(testData.getAnotherProject());
         createdProject2.getId();
 
@@ -88,7 +89,7 @@ public class BuildTypeTest extends BaseApiTest {
         superUserCheckRequests.getRequest(USERS).create(testData.getAnotherUser());
 
         var buildTypeForForeignProject = generate(Arrays.asList(createdProject1), BuildType.class); // generate - это создание локального Java-объекта с тестовыми данными (но БЕЗ HTTP-запроса)
-
+        // ValidationError (ResponseSpecification)
         new UncheckedBase(Specifications.getSpec().authSpec(testData.getAnotherUser()), BUILD_TYPES)
                 .create(buildTypeForForeignProject)
                 .then().assertThat().statusCode(HttpStatus.SC_FORBIDDEN)
