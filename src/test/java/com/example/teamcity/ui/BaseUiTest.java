@@ -20,8 +20,8 @@ public class BaseUiTest extends BaseTest {
         Configuration.browserSize = Config.getProperty("browserSize");
 
         Configuration.browserCapabilities.setCapability("selenoid:options",
-                Map.of("enableVNC", "true",
-                        "enableLog", "true"));
+                Map.of("enableVNC", true,
+                        "enableLog", true));
     }
 
     @AfterMethod(alwaysRun = true)
