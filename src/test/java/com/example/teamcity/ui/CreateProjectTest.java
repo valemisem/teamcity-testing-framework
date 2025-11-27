@@ -1,26 +1,24 @@
 package com.example.teamcity.ui;
 
-import com.example.teamcity.api.enums.Endpoint;
-import com.example.teamcity.ui.pages.LoginPage;
+import com.example.teamcity.ui.pages.admin.CreateProjectPage;
 import org.testng.annotations.Test;
 
 import static io.qameta.allure.Allure.step;
 
 @Test(groups = {"Regression"})
 public class CreateProjectTest extends BaseUiTest {
+    private static final String GIT_URL = "https://github.com/valemisem/mapal-testing";
+
     @Test(description = "User should be able to create project", groups = {"Positive"})
     public void userCreatesProject() {
         //  подготовка окружения
-        step("login as user");
-        superUserCheckRequests.getRequest(Endpoint.USERS).create(testData.getUser());
-        LoginPage.open().login(testData.getUser());
+        loginAs(testData.getUser());
 
         //  взаимодействие с UI
-        step("Open 'Create Project Page' (/admin/createObjectMenu.html)");
-        step("Send all project parameters (repository URL");
-        step("Click 'Proceed'");
-        step("Fix Project name and Build Type name values");
-        step("Click 'Proceed'");
+        CreateProjectPage.open("_Root")
+                .createForm(GIT_URL)
+                .setupProject(testData.getProject().getName(), testData.getBuildType().getName());
+
 
         // проверка состояния АПИ (корректность отправки данных с UI на API)
         // API: project with name, buildType for this project with buildType name
