@@ -1,7 +1,9 @@
 package com.example.teamcity.ui;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.SelenideElement;
 import com.example.teamcity.BaseTest;
 import com.example.teamcity.api.config.Config;
 import com.example.teamcity.api.enums.Endpoint;
@@ -11,6 +13,9 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeSuite;
 
 import java.util.Map;
+
+import static com.codeborne.selenide.Selenide.$;
+import static com.example.teamcity.ui.pages.BasePage.BASE_WAITING;
 
 public class BaseUiTest extends BaseTest {
     @BeforeSuite(alwaysRun = true)
@@ -33,7 +38,9 @@ public class BaseUiTest extends BaseTest {
     }
 
     protected void loginAs(User user) {
+        final SelenideElement anchor = $("[data-test='ring-link']");
         superUserCheckRequests.getRequest(Endpoint.USERS).create(testData.getUser());
         LoginPage.open().login(testData.getUser());
+        anchor.shouldBe(Condition.visible, BASE_WAITING);
     }
 }

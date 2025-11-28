@@ -29,7 +29,7 @@ public class BuildTypeTest extends BaseApiTest {
         userCheckRequests.<Project>getRequest(PROJECT).create(testData.getProject());
         userCheckRequests.getRequest(BUILD_TYPES).create(testData.getBuildType());
 
-        var createdBuildType = userCheckRequests.<BuildType>getRequest(BUILD_TYPES).read(testData.getBuildType().getId());
+        var createdBuildType = userCheckRequests.<BuildType>getRequest(BUILD_TYPES).read("id:" + testData.getBuildType().getId());
         softy.assertEquals(testData.getBuildType().getName(), createdBuildType.getName(), "BuildType name does not match");
     }
 
@@ -116,7 +116,7 @@ public class BuildTypeTest extends BaseApiTest {
         //createdBuildType = то, что вернул сервер
 
         // now we can do a GET request and get name from GET request!!
-        var createdBuildType = requests.<BuildType>getRequest(BUILD_TYPES).read(buildType.getId());
+        var createdBuildType = requests.<BuildType>getRequest(BUILD_TYPES).read("id:" + buildType.getId());
         // assert!
         softy.assertEquals(buildType.getName(), createdBuildType.getName(), "BuildType name does not match");
         // сюда же можно добавить и assert все важные для нас поля, не только имя

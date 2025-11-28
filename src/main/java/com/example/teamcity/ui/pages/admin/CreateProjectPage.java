@@ -15,7 +15,7 @@ public class CreateProjectPage extends CreateBasePage {
         return Selenide.open(CREATE_URL.formatted(projectId, PROJECT_SHOW_MODE), CreateProjectPage.class);
     }
 
-    public CreateProjectPage createForm(String url){
+    public CreateProjectPage createForm(String url) {
         baseCreateForm(url);
         return this; // возвращаем тот же CreateProjectPage
     }
