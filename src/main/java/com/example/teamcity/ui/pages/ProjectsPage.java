@@ -1,17 +1,22 @@
 package com.example.teamcity.ui.pages;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.SelenideElement;
 import com.example.teamcity.ui.elements.ProjectElement;
 
 import java.util.List;
 
+import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
 public class ProjectsPage extends BasePage {
     private static final String PROJECTS_URL = "/favorite/projects";
 
     private ElementsCollection projectElements = $$("div[class*='Subproject__container']");
+
+    private SelenideElement header = $(".MainPanel__router--gF > div");
 
     // ElementCollection -> List<ProjectElement>
     // UI elements -> List<Object>
@@ -21,11 +26,19 @@ public class ProjectsPage extends BasePage {
         return Selenide.open(PROJECTS_URL, ProjectsPage.class);
     }
 
+    public ProjectsPage() {
+         header.shouldBe(Condition.visible, BASE_WAITING);
+    }
+
     public List<ProjectElement> getProjects() {
          return generatePageElements(projectElements, ProjectElement::new);
         // функцию, которую я передаю - это конструктор ProjectElement::new
         // ProjectElement у нас создается по selenide element (name, link, button)
         // десериализация по name, link, button
+
+        // ProjectElement::new    ==   new ProjectElement(selenideElement)
+
+        // ProjectElement::new - это method reference, ссылка на конструктор
     }
 
 

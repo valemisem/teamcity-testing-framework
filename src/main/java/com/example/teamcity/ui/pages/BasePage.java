@@ -11,6 +11,8 @@ import java.util.function.Function;
 public class BasePage {
     public static final Duration BASE_WAITING = Duration.ofSeconds(30);
 
+    // Преврати коллекцию WebElements → в коллекцию объектов T
+
     protected <T extends BasePageElement> List<T> generatePageElements( // возвращаем лист типа Дженерик
             ElementsCollection collection, Function<SelenideElement, T> creator)
     // передали коллекцию, из которой потом хотим сделать список элементов (провести генерацию)
@@ -25,4 +27,6 @@ public class BasePage {
     // Джава по разному работает со стримом и коллекцией!
     // creator(Selenide Element 1) -> T -> add to list
     // creator(Selenide Element 2) -> T -> add to list
+
+    // map = “преобразовать”
 }
