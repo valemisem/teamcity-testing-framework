@@ -15,10 +15,8 @@ public class ProjectElement extends BasePageElement {
     // конструктор для поиска только внутри элемента
     public ProjectElement(SelenideElement element) {
         super(element); // чтобы вызвать конструктор родителя
-        this.name = find("span[class*='MiddleEllipsis__visible--jz']"); // ищем ТОЛЬКО ВНУТРИ ЭЛЕМЕНТА
+        this.name = find("span[class*='MiddleEllipsis']"); // ищем ТОЛЬКО ВНУТРИ ЭЛЕМЕНТА
         this.link = find("a");
         this.button = find("button");
-
     }
-
 }

@@ -34,9 +34,10 @@ public class CreateProjectTest extends BaseUiTest {
                 .title.shouldHave(Condition.exactText(testData.getProject().getName()));
 
         var projectExists = ProjectsPage.open()
+                .waitForProjects()
                 .getProjects().stream()
-                .anyMatch(project -> project.getName().text().equals(testData.getProject().getName()));
-        softy.assertTrue(projectExists);
+                .filter(project -> project.getName().text().equals(testData.getProject().getName())).count();
+        softy.assertEquals(projectExists, 1);
     }
 
     @Test(description = "User should not be able to create project without name", groups = {"Negative"})
