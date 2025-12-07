@@ -38,6 +38,4 @@ public class ProjectsPage extends BasePage {
 
         // ProjectElement::new - это method reference, ссылка на конструктор
     }
-
-
 }

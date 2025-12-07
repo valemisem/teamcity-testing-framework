@@ -8,8 +8,6 @@ import com.example.teamcity.ui.pages.ProjectsPage;
 import com.example.teamcity.ui.pages.admin.CreateProjectPage;
 import org.testng.annotations.Test;
 
-import static io.qameta.allure.Allure.step;
-
 @Test(groups = {"Regression"})
 public class CreateProjectTest extends BaseUiTest {
     private static final String GIT_URL = "https://github.com/valemisem/mapal-testing";
@@ -42,20 +40,8 @@ public class CreateProjectTest extends BaseUiTest {
 
     @Test(description = "User should not be able to create project without name", groups = {"Negative"})
     public void userCreatesProjectWithoutName() {
-        step("login as user");
-        step("Check number of projects");
-
-        //  взаимодействие с UI
-        step("Open 'Create Project Page' (/admin/createObjectMenu.html)");
-        step("Send all project parameters (repository URL");
-        step("Click 'Proceed'");
-        step("Set incorrect/empty Project name");
-        step("Click 'Proceed'");
-
-        // проверка состояния АПИ (корректность отправки данных с UI на API)
-        step("Check that number of projects did not change");
-
-        step("Check that error appears 'Project name must not be empty'");
-
+        loginAs(testData.getUser());
+        CreateProjectPage.open("_Root")
+                .createForm(GIT_URL).setupProject(null, null).verifyErrorMessage();
     }
 }
