@@ -1,0 +1,20 @@
+name: Deploy frontend
+
+on: workflow_call
+
+# Это лишь примерные степы, как может выглядеть пайплайн фронта
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build frontend
+        run: echo Собирается билд фронта (прогоняются юнит тесты при сборке, запускаются линтеры ), формируется и публикуется Docker образ с изменениями
+
+
+  deploy-stage:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy frontend to stage/review app
+        run: echo Происходит сам деплой фронта
