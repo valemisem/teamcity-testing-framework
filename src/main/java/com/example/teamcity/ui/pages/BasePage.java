@@ -10,6 +10,7 @@ import java.util.function.Function;
 
 public class BasePage {
     public static final Duration BASE_WAITING = Duration.ofSeconds(30);
+    public static final Duration LONG_WAITING = Duration.ofMinutes(3);
 
     // Преврати коллекцию WebElements → в коллекцию объектов T
 
