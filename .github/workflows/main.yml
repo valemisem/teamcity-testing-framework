@@ -1,5 +1,4 @@
 name: TeamCity deployment
-
 on: push
 
 jobs:

@@ -35,7 +35,11 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: TeamCity Setup
-        uses: ./.github/actions/teamcity-setup
+        uses: ./.github/actions/teamcity-setup # TeamCity Setup включает установку Java
+        # Это локальный composite action
+        # не создаёт новую машину
+        #
+        #выполняется внутри job
 
       - name: Run tests
         continue-on-error: true
