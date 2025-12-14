@@ -19,6 +19,7 @@
         <allure-java-commons-version>2.30.0</allure-java-commons-version>
         <jackson-databind>2.17.2</jackson-databind>
         <wiremock.version>3.9.1</wiremock.version>
+        <latest-swagger-coverage-version>1.5.0</latest-swagger-coverage-version>
     </properties>
 
     <dependencies>
@@ -68,6 +69,11 @@
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-selenide</artifactId>
             <version>2.25.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.viclovsky</groupId>
+            <artifactId>swagger-coverage-rest-assured</artifactId>
+            <version>${latest-swagger-coverage-version}</version>
         </dependency>
     </dependencies>
     <build>
