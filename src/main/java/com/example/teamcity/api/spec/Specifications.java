@@ -70,8 +70,6 @@ public class Specifications {
         return reqBuilder()
                 .setAuth(basicAuthScheme)
                 .build();
-
-
     }
 
     public RequestSpecification mockSpec() {
@@ -79,5 +77,4 @@ public class Specifications {
                 .setBaseUri("http://localhost:8081")
                 .build();
     }
-
 }
