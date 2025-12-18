@@ -13,7 +13,8 @@ public class ProjectsPage extends BasePage {
 
     public ElementsCollection projectElements = $$("div[class*='Subproject__container']");
 
-    private SelenideElement header = $("span[class*='ProjectPageHeader__title']");
+    //    private SelenideElement header = $("span[class*='ProjectPageHeader__title']"); // only for local setup with existing projects
+    private SelenideElement header = $("a[data-test='create-project']");
 
     public static ProjectsPage open() {
         return Selenide.open(PROJECTS_URL, ProjectsPage.class);

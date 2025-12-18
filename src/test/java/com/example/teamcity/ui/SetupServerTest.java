@@ -8,5 +8,4 @@ public class SetupServerTest extends BaseUiTest {
     private void setupTeamCityServerTest() {
         FirstStartPage.open().setupFirstStart();
     }
-
 }
