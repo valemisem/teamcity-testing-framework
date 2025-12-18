@@ -46,6 +46,10 @@ jobs:
         # указываем группу, чтобы не запустить тесты, связанные с сетапом TeamCity
         run: ./mvnw test -Dtest='com.example.teamcity.${{ inputs.package }}.**' -Dgroups=Regression
 
+      - name: Grant execute permission to swagger-coverage
+        if: ${{ inputs.package == 'api' }}
+        run: chmod +x .swagger-coverage-commandline/bin/swagger-coverage-commandline
+
       # Ссоздаем репорт с покрытием АПИ тестов, основанном на Сваггер документации
       - name: Run Swagger Coverage
         continue-on-error: true
