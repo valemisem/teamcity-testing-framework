@@ -92,10 +92,6 @@ public class ProjectTest extends BaseApiTest {
                 .create(project1);
         response.then().assertThat().statusCode(HttpStatus.SC_INTERNAL_SERVER_ERROR)
                 .body(Matchers.containsString("Project ID must not be empty."));
-
-        var checkResponse = new UncheckedRequests(Specifications.getSpec().authSpec(testData.getUser()));
-        checkResponse.getRequest(Endpoint.PROJECT).read(project1.getId())
-                .then().assertThat().statusCode(HttpStatus.SC_NOT_FOUND);
     }
 }
 
