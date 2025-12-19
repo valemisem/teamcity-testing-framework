@@ -83,6 +83,15 @@ jobs:
           sudo mv allure-2.29.0 /opt/allure
           sudo ln -s /opt/allure/bin/allure /usr/bin/allure
 
+      # 3. ВАЖНЫЙ ШАГ - подложить history
+      - name: Restore Allure history
+        if: always()
+        run: |
+          if [ -d "gh-pages/${{ inputs.package }}/history" ]; then
+            mkdir -p target/allure-results/history
+            cp -R gh-pages/${{ inputs.package }}/history/* target/allure-results/history/
+          fi
+
       # Генерируем Allure Report с историей
       - name: Generate Allure report
         if: always()
