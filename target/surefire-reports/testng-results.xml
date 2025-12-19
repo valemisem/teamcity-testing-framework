@@ -1,166 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-19T17:51:17 UTC" name="Surefire suite" finished-at="2025-12-19T17:51:26 UTC" duration-ms="8728">
+  <suite started-at="2025-12-19T17:50:36 UTC" name="Surefire suite" finished-at="2025-12-19T17:52:12 UTC" duration-ms="95088">
     <groups>
-      <group name="CRUD">
-        <method signature="BuildTypeTest.userCreatesBuildTypeTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" name="userCreatesBuildTypeTest" class="com.example.teamcity.api.BuildTypeTest"/>
-        <method signature="BuildTypeTest.userCreatesTwoBuildTypesWithTheSameIdTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" name="userCreatesTwoBuildTypesWithTheSameIdTest" class="com.example.teamcity.api.BuildTypeTest"/>
-        <method signature="ProjectTest.userShouldBeAbleCreateProjectTest()[pri:0, instance:com.example.teamcity.api.ProjectTest@f202d6d]" name="userShouldBeAbleCreateProjectTest" class="com.example.teamcity.api.ProjectTest"/>
-      </group> <!-- CRUD -->
       <group name="Negative">
-        <method signature="BuildTypeTest.projectAdminCreatesBuildTypeForAnotherUserProjectTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" name="projectAdminCreatesBuildTypeForAnotherUserProjectTest" class="com.example.teamcity.api.BuildTypeTest"/>
-        <method signature="BuildTypeTest.userCreatesTwoBuildTypesWithTheSameIdTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" name="userCreatesTwoBuildTypesWithTheSameIdTest" class="com.example.teamcity.api.BuildTypeTest"/>
+        <method signature="CreateBuildTest.userCreatesBuildConfigurationWithoutProject()[pri:0, instance:com.example.teamcity.ui.CreateBuildTest@2df3c564]" name="userCreatesBuildConfigurationWithoutProject" class="com.example.teamcity.ui.CreateBuildTest"/>
+        <method signature="CreateProjectTest.userCreatesProjectWithoutName()[pri:0, instance:com.example.teamcity.ui.CreateProjectTest@6fd1660]" name="userCreatesProjectWithoutName" class="com.example.teamcity.ui.CreateProjectTest"/>
       </group> <!-- Negative -->
       <group name="Positive">
-        <method signature="BuildTypeTest.projectAdminCreatesBuildTypeForTheirProjectTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" name="projectAdminCreatesBuildTypeForTheirProjectTest" class="com.example.teamcity.api.BuildTypeTest"/>
-        <method signature="BuildTypeTest.userCreatesBuildTypeTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" name="userCreatesBuildTypeTest" class="com.example.teamcity.api.BuildTypeTest"/>
-        <method signature="ProjectTest.userShouldBeAbleCreateProjectTest()[pri:0, instance:com.example.teamcity.api.ProjectTest@f202d6d]" name="userShouldBeAbleCreateProjectTest" class="com.example.teamcity.api.ProjectTest"/>
+        <method signature="CreateBuildTest.userCreatesBuildConfiguration()[pri:0, instance:com.example.teamcity.ui.CreateBuildTest@2df3c564]" name="userCreatesBuildConfiguration" class="com.example.teamcity.ui.CreateBuildTest"/>
+        <method signature="CreateProjectTest.userCreatesProject()[pri:0, instance:com.example.teamcity.ui.CreateProjectTest@6fd1660]" name="userCreatesProject" class="com.example.teamcity.ui.CreateProjectTest"/>
       </group> <!-- Positive -->
       <group name="Regression">
-        <method signature="BuildTypeTest.projectAdminCreatesBuildTypeForAnotherUserProjectTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" name="projectAdminCreatesBuildTypeForAnotherUserProjectTest" class="com.example.teamcity.api.BuildTypeTest"/>
-        <method signature="BuildTypeTest.projectAdminCreatesBuildTypeForTheirProjectTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" name="projectAdminCreatesBuildTypeForTheirProjectTest" class="com.example.teamcity.api.BuildTypeTest"/>
-        <method signature="BuildTypeTest.userCreatesBuildTypeTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" name="userCreatesBuildTypeTest" class="com.example.teamcity.api.BuildTypeTest"/>
-        <method signature="BuildTypeTest.userCreatesTwoBuildTypesWithTheSameIdTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" name="userCreatesTwoBuildTypesWithTheSameIdTest" class="com.example.teamcity.api.BuildTypeTest"/>
-        <method signature="ProjectTest.userCreatesProjectWithEmptyIdTest()[pri:0, instance:com.example.teamcity.api.ProjectTest@f202d6d]" name="userCreatesProjectWithEmptyIdTest" class="com.example.teamcity.api.ProjectTest"/>
-        <method signature="ProjectTest.userCreatesProjectWithMalformattedIdTest()[pri:0, instance:com.example.teamcity.api.ProjectTest@f202d6d]" name="userCreatesProjectWithMalformattedIdTest" class="com.example.teamcity.api.ProjectTest"/>
-        <method signature="ProjectTest.userCreatesTwoProjectsWithTheSameIdTest()[pri:0, instance:com.example.teamcity.api.ProjectTest@f202d6d]" name="userCreatesTwoProjectsWithTheSameIdTest" class="com.example.teamcity.api.ProjectTest"/>
-        <method signature="ProjectTest.userCreatesTwoProjectsWithTheSameNameTest()[pri:0, instance:com.example.teamcity.api.ProjectTest@f202d6d]" name="userCreatesTwoProjectsWithTheSameNameTest" class="com.example.teamcity.api.ProjectTest"/>
-        <method signature="ProjectTest.userShouldBeAbleCreateProjectTest()[pri:0, instance:com.example.teamcity.api.ProjectTest@f202d6d]" name="userShouldBeAbleCreateProjectTest" class="com.example.teamcity.api.ProjectTest"/>
+        <method signature="CreateBuildTest.userCreatesBuildConfiguration()[pri:0, instance:com.example.teamcity.ui.CreateBuildTest@2df3c564]" name="userCreatesBuildConfiguration" class="com.example.teamcity.ui.CreateBuildTest"/>
+        <method signature="CreateBuildTest.userCreatesBuildConfigurationWithoutProject()[pri:0, instance:com.example.teamcity.ui.CreateBuildTest@2df3c564]" name="userCreatesBuildConfigurationWithoutProject" class="com.example.teamcity.ui.CreateBuildTest"/>
+        <method signature="CreateProjectTest.userCreatesProject()[pri:0, instance:com.example.teamcity.ui.CreateProjectTest@6fd1660]" name="userCreatesProject" class="com.example.teamcity.ui.CreateProjectTest"/>
+        <method signature="CreateProjectTest.userCreatesProjectWithoutName()[pri:0, instance:com.example.teamcity.ui.CreateProjectTest@6fd1660]" name="userCreatesProjectWithoutName" class="com.example.teamcity.ui.CreateProjectTest"/>
       </group> <!-- Regression -->
-      <group name="BuildType">
-        <method signature="BuildTypeTest.projectAdminCreatesBuildTypeForAnotherUserProjectTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" name="projectAdminCreatesBuildTypeForAnotherUserProjectTest" class="com.example.teamcity.api.BuildTypeTest"/>
-        <method signature="BuildTypeTest.projectAdminCreatesBuildTypeForTheirProjectTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" name="projectAdminCreatesBuildTypeForTheirProjectTest" class="com.example.teamcity.api.BuildTypeTest"/>
-      </group> <!-- BuildType -->
-      <group name="Roles">
-        <method signature="BuildTypeTest.projectAdminCreatesBuildTypeForAnotherUserProjectTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" name="projectAdminCreatesBuildTypeForAnotherUserProjectTest" class="com.example.teamcity.api.BuildTypeTest"/>
-        <method signature="BuildTypeTest.projectAdminCreatesBuildTypeForTheirProjectTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" name="projectAdminCreatesBuildTypeForTheirProjectTest" class="com.example.teamcity.api.BuildTypeTest"/>
-      </group> <!-- Roles -->
     </groups>
-    <test started-at="2025-12-19T17:51:17 UTC" name="Surefire test" finished-at="2025-12-19T17:51:26 UTC" duration-ms="8728">
-      <class name="com.example.teamcity.api.ProjectTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.example.teamcity.api.ProjectTest@f202d6d]" started-at="2025-12-19T17:51:17 UTC" name="beforeTest" finished-at="2025-12-19T17:51:17 UTC" duration-ms="36" status="PASS">
+    <test started-at="2025-12-19T17:50:36 UTC" name="Surefire test" finished-at="2025-12-19T17:52:12 UTC" duration-ms="95088">
+      <class name="com.example.teamcity.ui.CreateProjectTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.example.teamcity.ui.CreateProjectTest@6fd1660]" started-at="2025-12-19T17:51:46 UTC" name="beforeTest" finished-at="2025-12-19T17:51:46 UTC" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="userCreatesProjectWithEmptyIdTest()[pri:0, instance:com.example.teamcity.api.ProjectTest@f202d6d]" started-at="2025-12-19T17:51:17 UTC" name="userCreatesProjectWithEmptyIdTest" finished-at="2025-12-19T17:51:18 UTC" duration-ms="1132" status="PASS">
+        <test-method signature="userCreatesProject()[pri:0, instance:com.example.teamcity.ui.CreateProjectTest@6fd1660]" started-at="2025-12-19T17:51:46 UTC" name="userCreatesProject" description="User should be able to create project" finished-at="2025-12-19T17:52:01 UTC" duration-ms="14920" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userCreatesProjectWithEmptyIdTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.example.teamcity.api.ProjectTest@f202d6d]" started-at="2025-12-19T17:51:18 UTC" name="afterTest" finished-at="2025-12-19T17:51:19 UTC" duration-ms="140" status="PASS">
+        </test-method> <!-- userCreatesProject -->
+        <test-method is-config="true" signature="closeWebDriver()[pri:0, instance:com.example.teamcity.ui.CreateProjectTest@6fd1660]" started-at="2025-12-19T17:52:01 UTC" name="closeWebDriver" finished-at="2025-12-19T17:52:01 UTC" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWebDriver -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.example.teamcity.ui.CreateProjectTest@6fd1660]" started-at="2025-12-19T17:52:01 UTC" name="afterTest" finished-at="2025-12-19T17:52:01 UTC" duration-ms="135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.example.teamcity.api.ProjectTest@f202d6d]" started-at="2025-12-19T17:51:19 UTC" name="beforeTest" finished-at="2025-12-19T17:51:19 UTC" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.example.teamcity.ui.CreateProjectTest@6fd1660]" started-at="2025-12-19T17:52:01 UTC" name="beforeTest" finished-at="2025-12-19T17:52:01 UTC" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="userCreatesProjectWithMalformattedIdTest()[pri:0, instance:com.example.teamcity.api.ProjectTest@f202d6d]" started-at="2025-12-19T17:51:19 UTC" name="userCreatesProjectWithMalformattedIdTest" finished-at="2025-12-19T17:51:19 UTC" duration-ms="350" status="PASS">
+        <test-method signature="userCreatesProjectWithoutName()[pri:0, instance:com.example.teamcity.ui.CreateProjectTest@6fd1660]" started-at="2025-12-19T17:52:01 UTC" name="userCreatesProjectWithoutName" description="User should not be able to create project without name" finished-at="2025-12-19T17:52:11 UTC" duration-ms="10474" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userCreatesProjectWithMalformattedIdTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.example.teamcity.api.ProjectTest@f202d6d]" started-at="2025-12-19T17:51:19 UTC" name="afterTest" finished-at="2025-12-19T17:51:19 UTC" duration-ms="111" status="PASS">
+        </test-method> <!-- userCreatesProjectWithoutName -->
+        <test-method is-config="true" signature="closeWebDriver()[pri:0, instance:com.example.teamcity.ui.CreateProjectTest@6fd1660]" started-at="2025-12-19T17:52:11 UTC" name="closeWebDriver" finished-at="2025-12-19T17:52:11 UTC" duration-ms="62" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWebDriver -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.example.teamcity.ui.CreateProjectTest@6fd1660]" started-at="2025-12-19T17:52:11 UTC" name="afterTest" finished-at="2025-12-19T17:52:12 UTC" duration-ms="144" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.example.teamcity.api.ProjectTest@f202d6d]" started-at="2025-12-19T17:51:19 UTC" name="beforeTest" finished-at="2025-12-19T17:51:19 UTC" duration-ms="4" status="PASS">
+      </class> <!-- com.example.teamcity.ui.CreateProjectTest -->
+      <class name="com.example.teamcity.ui.CreateBuildTest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.example.teamcity.ui.CreateBuildTest@2df3c564]" started-at="2025-12-19T17:50:37 UTC" name="beforeTest" finished-at="2025-12-19T17:50:37 UTC" duration-ms="40" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="userCreatesTwoProjectsWithTheSameIdTest()[pri:0, instance:com.example.teamcity.api.ProjectTest@f202d6d]" started-at="2025-12-19T17:51:19 UTC" name="userCreatesTwoProjectsWithTheSameIdTest" finished-at="2025-12-19T17:51:20 UTC" duration-ms="1092" status="PASS">
+        <test-method signature="userCreatesBuildConfiguration()[pri:0, instance:com.example.teamcity.ui.CreateBuildTest@2df3c564]" started-at="2025-12-19T17:50:37 UTC" name="userCreatesBuildConfiguration" description="User should be able to create build configuration" finished-at="2025-12-19T17:51:32 UTC" duration-ms="55589" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userCreatesTwoProjectsWithTheSameIdTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.example.teamcity.api.ProjectTest@f202d6d]" started-at="2025-12-19T17:51:20 UTC" name="afterTest" finished-at="2025-12-19T17:51:20 UTC" duration-ms="302" status="PASS">
+        </test-method> <!-- userCreatesBuildConfiguration -->
+        <test-method is-config="true" signature="closeWebDriver()[pri:0, instance:com.example.teamcity.ui.CreateBuildTest@2df3c564]" started-at="2025-12-19T17:51:32 UTC" name="closeWebDriver" finished-at="2025-12-19T17:51:32 UTC" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWebDriver -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.example.teamcity.ui.CreateBuildTest@2df3c564]" started-at="2025-12-19T17:51:32 UTC" name="afterTest" finished-at="2025-12-19T17:51:33 UTC" duration-ms="378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.example.teamcity.api.ProjectTest@f202d6d]" started-at="2025-12-19T17:51:20 UTC" name="beforeTest" finished-at="2025-12-19T17:51:20 UTC" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.example.teamcity.ui.CreateBuildTest@2df3c564]" started-at="2025-12-19T17:51:33 UTC" name="beforeTest" finished-at="2025-12-19T17:51:33 UTC" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="userCreatesTwoProjectsWithTheSameNameTest()[pri:0, instance:com.example.teamcity.api.ProjectTest@f202d6d]" started-at="2025-12-19T17:51:20 UTC" name="userCreatesTwoProjectsWithTheSameNameTest" finished-at="2025-12-19T17:51:21 UTC" duration-ms="477" status="PASS">
+        <test-method signature="userCreatesBuildConfigurationWithoutProject()[pri:0, instance:com.example.teamcity.ui.CreateBuildTest@2df3c564]" started-at="2025-12-19T17:51:33 UTC" name="userCreatesBuildConfigurationWithoutProject" description="User should not be able to create build without name" finished-at="2025-12-19T17:51:45 UTC" duration-ms="12592" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userCreatesTwoProjectsWithTheSameNameTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.example.teamcity.api.ProjectTest@f202d6d]" started-at="2025-12-19T17:51:21 UTC" name="afterTest" finished-at="2025-12-19T17:51:21 UTC" duration-ms="206" status="PASS">
+        </test-method> <!-- userCreatesBuildConfigurationWithoutProject -->
+        <test-method is-config="true" signature="closeWebDriver()[pri:0, instance:com.example.teamcity.ui.CreateBuildTest@2df3c564]" started-at="2025-12-19T17:51:45 UTC" name="closeWebDriver" finished-at="2025-12-19T17:51:45 UTC" duration-ms="72" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.example.teamcity.api.ProjectTest@f202d6d]" started-at="2025-12-19T17:51:21 UTC" name="beforeTest" finished-at="2025-12-19T17:51:21 UTC" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="userShouldBeAbleCreateProjectTest()[pri:0, instance:com.example.teamcity.api.ProjectTest@f202d6d]" started-at="2025-12-19T17:51:21 UTC" name="userShouldBeAbleCreateProjectTest" description="User should be able to create project" finished-at="2025-12-19T17:51:22 UTC" duration-ms="481" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userShouldBeAbleCreateProjectTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.example.teamcity.api.ProjectTest@f202d6d]" started-at="2025-12-19T17:51:22 UTC" name="afterTest" finished-at="2025-12-19T17:51:22 UTC" duration-ms="174" status="PASS">
+        </test-method> <!-- closeWebDriver -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.example.teamcity.ui.CreateBuildTest@2df3c564]" started-at="2025-12-19T17:51:45 UTC" name="afterTest" finished-at="2025-12-19T17:51:46 UTC" duration-ms="248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.example.teamcity.api.ProjectTest -->
-      <class name="com.example.teamcity.api.DummyTestCheckAuth">
-        <test-method is-config="true" signature="setUpServerAuthSettings()[pri:0, instance:com.example.teamcity.api.DummyTestCheckAuth@5e268ce6]" started-at="2025-12-19T17:51:14 UTC" name="setUpServerAuthSettings" finished-at="2025-12-19T17:51:17 UTC" duration-ms="3218" status="PASS">
+      </class> <!-- com.example.teamcity.ui.CreateBuildTest -->
+      <class name="com.example.teamcity.ui.BaseUiTest">
+        <test-method is-config="true" signature="setupUiTest()[pri:0, instance:com.example.teamcity.ui.BaseUiTest@723ed581]" started-at="2025-12-19T17:50:36 UTC" name="setupUiTest" finished-at="2025-12-19T17:50:36 UTC" duration-ms="39" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpServerAuthSettings -->
-        <test-method is-config="true" signature="cleanUpServerAuthSettings()[pri:0, instance:com.example.teamcity.api.DummyTestCheckAuth@5e268ce6]" started-at="2025-12-19T17:51:26 UTC" name="cleanUpServerAuthSettings" finished-at="2025-12-19T17:51:26 UTC" duration-ms="162" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUpServerAuthSettings -->
-      </class> <!-- com.example.teamcity.api.DummyTestCheckAuth -->
-      <class name="com.example.teamcity.api.BuildTypeTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" started-at="2025-12-19T17:51:22 UTC" name="beforeTest" finished-at="2025-12-19T17:51:22 UTC" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="projectAdminCreatesBuildTypeForAnotherUserProjectTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" started-at="2025-12-19T17:51:22 UTC" name="projectAdminCreatesBuildTypeForAnotherUserProjectTest" description="Project admin should not be able to create build type for not their project" finished-at="2025-12-19T17:51:23 UTC" duration-ms="756" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- projectAdminCreatesBuildTypeForAnotherUserProjectTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" started-at="2025-12-19T17:51:23 UTC" name="afterTest" finished-at="2025-12-19T17:51:23 UTC" duration-ms="307" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" started-at="2025-12-19T17:51:23 UTC" name="beforeTest" finished-at="2025-12-19T17:51:23 UTC" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="projectAdminCreatesBuildTypeForTheirProjectTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" started-at="2025-12-19T17:51:23 UTC" name="projectAdminCreatesBuildTypeForTheirProjectTest" description="Project admin should be able to create build type for their project" finished-at="2025-12-19T17:51:24 UTC" duration-ms="1177" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- projectAdminCreatesBuildTypeForTheirProjectTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" started-at="2025-12-19T17:51:24 UTC" name="afterTest" finished-at="2025-12-19T17:51:24 UTC" duration-ms="257" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" started-at="2025-12-19T17:51:24 UTC" name="beforeTest" finished-at="2025-12-19T17:51:24 UTC" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="userCreatesBuildTypeTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" started-at="2025-12-19T17:51:24 UTC" name="userCreatesBuildTypeTest" description="User should be able to create build type" finished-at="2025-12-19T17:51:25 UTC" duration-ms="456" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userCreatesBuildTypeTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" started-at="2025-12-19T17:51:25 UTC" name="afterTest" finished-at="2025-12-19T17:51:25 UTC" duration-ms="217" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" started-at="2025-12-19T17:51:25 UTC" name="beforeTest" finished-at="2025-12-19T17:51:25 UTC" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="userCreatesTwoBuildTypesWithTheSameIdTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" started-at="2025-12-19T17:51:25 UTC" name="userCreatesTwoBuildTypesWithTheSameIdTest" description="User should not be able to create two build types with the same Id" finished-at="2025-12-19T17:51:25 UTC" duration-ms="497" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userCreatesTwoBuildTypesWithTheSameIdTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.example.teamcity.api.BuildTypeTest@aac3f4e]" started-at="2025-12-19T17:51:25 UTC" name="afterTest" finished-at="2025-12-19T17:51:26 UTC" duration-ms="262" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.example.teamcity.api.BuildTypeTest -->
+        </test-method> <!-- setupUiTest -->
+      </class> <!-- com.example.teamcity.ui.BaseUiTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

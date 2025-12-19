@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="14.217" tests="9" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="97.303" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,9 +12,9 @@
     <property name="java.vm.specification.version" value="21"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/opt/hostedtoolcache/Java_Zulu_jdk/21.0.9-10/x64/lib"/>
-    <property name="sun.java.command" value="/home/runner/work/teamcity-testing-framework/teamcity-testing-framework/target/surefire/surefirebooter-20251219175111539_3.jar /home/runner/work/teamcity-testing-framework/teamcity-testing-framework/target/surefire 2025-12-19T17-51-11_369-jvmRun1 surefire-20251219175111539_1tmp surefire_0-20251219175111539_2tmp"/>
+    <property name="sun.java.command" value="/home/runner/work/teamcity-testing-framework/teamcity-testing-framework/target/surefire/surefirebooter-20251219175034234_3.jar /home/runner/work/teamcity-testing-framework/teamcity-testing-framework/target/surefire 2025-12-19T17-50-34_112-jvmRun1 surefire-20251219175034234_1tmp surefire_0-20251219175034234_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="com.example.teamcity.api.**"/>
+    <property name="test" value="com.example.teamcity.ui.**"/>
     <property name="surefire.test.class.path" value="/home/runner/work/teamcity-testing-framework/teamcity-testing-framework/target/test-classes:/home/runner/work/teamcity-testing-framework/teamcity-testing-framework/target/classes:/home/runner/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/home/runner/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/runner/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/runner/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/home/runner/.m2/repository/io/rest-assured/rest-assured/5.5.0/rest-assured-5.5.0.jar:/home/runner/.m2/repository/org/apache/groovy/groovy/4.0.22/groovy-4.0.22.jar:/home/runner/.m2/repository/org/apache/groovy/groovy-xml/4.0.22/groovy-xml-4.0.22.jar:/home/runner/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/runner/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/runner/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/runner/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/runner/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/runner/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/runner/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/runner/.m2/repository/io/rest-assured/json-path/5.5.0/json-path-5.5.0.jar:/home/runner/.m2/repository/org/apache/groovy/groovy-json/4.0.22/groovy-json-4.0.22.jar:/home/runner/.m2/repository/io/rest-assured/rest-assured-common/5.5.0/rest-assured-common-5.5.0.jar:/home/runner/.m2/repository/io/rest-assured/xml-path/5.5.0/xml-path-5.5.0.jar:/home/runner/.m2/repository/io/qameta/allure/allure-testng/2.25.0/allure-testng-2.25.0.jar:/home/runner/.m2/repository/io/qameta/allure/allure-java-commons/2.25.0/allure-java-commons-2.25.0.jar:/home/runner/.m2/repository/io/qameta/allure/allure-model/2.25.0/allure-model-2.25.0.jar:/home/runner/.m2/repository/io/qameta/allure/allure-test-filter/2.25.0/allure-test-filter-2.25.0.jar:/home/runner/.m2/repository/io/qameta/allure/allure-rest-assured/2.25.0/allure-rest-assured-2.25.0.jar:/home/runner/.m2/repository/io/qameta/allure/allure-attachments/2.25.0/allure-attachments-2.25.0.jar:/home/runner/.m2/repository/org/freemarker/freemarker/2.3.31/freemarker-2.3.31.jar:/home/runner/.m2/repository/io/qameta/allure/allure-selenide/2.25.0/allure-selenide-2.25.0.jar:/home/runner/.m2/repository/com/codeborne/selenide/7.4.3/selenide-7.4.3.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-java/4.24.0/selenium-java-4.24.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-api/4.24.0/selenium-api-4.24.0.jar:/home/runner/.m2/repository/org/jspecify/jspecify/1.0.0/jspecify-1.0.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.24.0/selenium-chrome-driver-4.24.0.jar:/home/runner/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.24.0/selenium-chromium-driver-4.24.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-json/4.24.0/selenium-json-4.24.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.24.0/selenium-manager-4.24.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v126/4.24.0/selenium-devtools-v126-4.24.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v127/4.24.0/selenium-devtools-v127-4.24.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v128/4.24.0/selenium-devtools-v128-4.24.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.24.0/selenium-devtools-v85-4.24.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.24.0/selenium-edge-driver-4.24.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.24.0/selenium-firefox-driver-4.24.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-http/4.24.0/selenium-http-4.24.0.jar:/home/runner/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.24.0/selenium-ie-driver-4.24.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.24.0/selenium-remote-driver-4.24.0.jar:/home/runner/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-api/1.41.0/opentelemetry-api-1.41.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-context/1.41.0/opentelemetry-context-1.41.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.41.0/opentelemetry-exporter-logging-1.41.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.41.0/opentelemetry-sdk-common-1.41.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.41.0/opentelemetry-sdk-extension-autoconfigure-spi-1.41.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.41.0/opentelemetry-sdk-extension-autoconfigure-1.41.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.41.0-alpha/opentelemetry-api-incubator-1.41.0-alpha.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.41.0/opentelemetry-sdk-trace-1.41.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.41.0/opentelemetry-sdk-1.41.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.41.0/opentelemetry-sdk-metrics-1.41.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.41.0/opentelemetry-sdk-logs-1.41.0.jar:/home/runner/.m2/repository/net/bytebuddy/byte-buddy/1.15.0/byte-buddy-1.15.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-os/4.24.0/selenium-os-4.24.0.jar:/home/runner/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.24.0/selenium-safari-driver-4.24.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-support/4.24.0/selenium-support-4.24.0.jar:/home/runner/.m2/repository/com/codeborne/selenide-core/7.4.3/selenide-core-7.4.3.jar:/home/runner/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/runner/.m2/repository/com/google/guava/guava/33.3.0-jre/guava-33.3.0-jre.jar:/home/runner/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/home/runner/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/runner/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/runner/.m2/repository/org/checkerframework/checker-qual/3.43.0/checker-qual-3.43.0.jar:/home/runner/.m2/repository/com/google/errorprone/error_prone_annotations/2.28.0/error_prone_annotations-2.28.0.jar:/home/runner/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/home/runner/.m2/repository/org/apache/commons/commons-lang3/3.17.0/commons-lang3-3.17.0.jar:/home/runner/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/home/runner/.m2/repository/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.2/jackson-databind-2.17.2.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.2/jackson-annotations-2.17.2.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.2/jackson-core-2.17.2.jar:/home/runner/.m2/repository/org/wiremock/wiremock/3.9.1/wiremock-3.9.1.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-server/11.0.20/jetty-server-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-http/11.0.20/jetty-http-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-io/11.0.20/jetty-io-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/toolchain/jetty-jakarta-servlet-api/5.0.2/jetty-jakarta-servlet-api-5.0.2.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-servlet/11.0.20/jetty-servlet-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-security/11.0.20/jetty-security-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-servlets/11.0.20/jetty-servlets-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-util/11.0.20/jetty-util-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-webapp/11.0.20/jetty-webapp-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-xml/11.0.20/jetty-xml-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-proxy/11.0.20/jetty-proxy-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-client/11.0.20/jetty-client-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/http2/http2-server/11.0.20/http2-server-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/http2/http2-common/11.0.20/http2-common-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/http2/http2-hpack/11.0.20/http2-hpack-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-alpn-server/11.0.20/jetty-alpn-server-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-alpn-java-server/11.0.20/jetty-alpn-java-server-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-alpn-java-client/11.0.20/jetty-alpn-java-client-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-alpn-client/11.0.20/jetty-alpn-client-11.0.20.jar:/home/runner/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.2/jackson-datatype-jsr310-2.17.2.jar:/home/runner/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.3.1/httpclient5-5.3.1.jar:/home/runner/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2.4/httpcore5-5.2.4.jar:/home/runner/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2.4/httpcore5-h2-5.2.4.jar:/home/runner/.m2/repository/org/xmlunit/xmlunit-core/2.10.0/xmlunit-core-2.10.0.jar:/home/runner/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/runner/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/home/runner/.m2/repository/org/xmlunit/xmlunit-legacy/2.10.0/xmlunit-legacy-2.10.0.jar:/home/runner/.m2/repository/org/xmlunit/xmlunit-placeholders/2.10.0/xmlunit-placeholders-2.10.0.jar:/home/runner/.m2/repository/net/javacrumbs/json-unit/json-unit-core/2.40.0/json-unit-core-2.40.0.jar:/home/runner/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/home/runner/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/home/runner/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/home/runner/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/home/runner/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/home/runner/.m2/repository/com/github/jknack/handlebars/4.3.1/handlebars-4.3.1.jar:/home/runner/.m2/repository/com/github/jknack/handlebars-helpers/4.3.1/handlebars-helpers-4.3.1.jar:/home/runner/.m2/repository/commons-fileupload/commons-fileupload/1.5/commons-fileupload-1.5.jar:/home/runner/.m2/repository/com/networknt/json-schema-validator/1.5.0/json-schema-validator-1.5.0.jar:/home/runner/.m2/repository/com/ethlo/time/itu/1.10.2/itu-1.10.2.jar:/home/runner/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.17.1/jackson-dataformat-yaml-2.17.1.jar:/home/runner/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/runner/.m2/repository/com/github/viclovsky/swagger-coverage-rest-assured/1.5.0/swagger-coverage-rest-assured-1.5.0.jar:/home/runner/.m2/repository/com/github/viclovsky/swagger-coverage-commons/1.5.0/swagger-coverage-commons-1.5.0.jar:/home/runner/.m2/repository/io/swagger/core/v3/swagger-core/2.1.10/swagger-core-2.1.10.jar:/home/runner/.m2/repository/io/swagger/core/v3/swagger-annotations/2.1.10/swagger-annotations-2.1.10.jar:/home/runner/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/home/runner/.m2/repository/ch/qos/logback/logback-classic/1.2.10/logback-classic-1.2.10.jar:/home/runner/.m2/repository/ch/qos/logback/logback-core/1.2.10/logback-core-1.2.10.jar:/home/runner/.m2/repository/io/swagger/swagger-models/1.6.2/swagger-models-1.6.2.jar:/home/runner/.m2/repository/io/swagger/swagger-annotations/1.6.2/swagger-annotations-1.6.2.jar:/home/runner/.m2/repository/io/swagger/core/v3/swagger-models/2.1.10/swagger-models-2.1.10.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/runner"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/runner/work/teamcity-testing-framework/teamcity-testing-framework/target/surefire/surefirebooter-20251219175111539_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/runner/work/teamcity-testing-framework/teamcity-testing-framework/target/surefire/surefirebooter-20251219175034234_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.9+10-LTS"/>
     <property name="user.name" value="runner"/>
@@ -47,7 +47,7 @@
     <property name="os.arch" value="amd64"/>
     <property name="groups" value="Regression"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="sun.java.crac_command" value="/home/runner/work/teamcity-testing-framework/teamcity-testing-framework/target/surefire/surefirebooter-20251219175111539_3.jar /home/runner/work/teamcity-testing-framework/teamcity-testing-framework/target/surefire 2025-12-19T17-51-11_369-jvmRun1 surefire-20251219175111539_1tmp surefire_0-20251219175111539_2tmp"/>
+    <property name="sun.java.crac_command" value="/home/runner/work/teamcity-testing-framework/teamcity-testing-framework/target/surefire/surefirebooter-20251219175034234_3.jar /home/runner/work/teamcity-testing-framework/teamcity-testing-framework/target/surefire 2025-12-19T17-50-34_112-jvmRun1 surefire-20251219175034234_1tmp surefire_0-20251219175034234_2tmp"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
@@ -57,134 +57,13 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="userCreatesProjectWithEmptyIdTest" classname="com.example.teamcity.api.ProjectTest" time="1.173">
-    <system-out><![CDATA[Request method:	GET
-Request URI:	http://172.17.0.1:8111/app/rest/server/authSettings
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=8C99CAE03B935FAB972412EB7BD20A77; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:26 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:15 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "allowGuest": false,
-    "guestUsername": "guest",
-    "collapseLoginForm": false,
-    "perProjectPermissions": false,
-    "emailVerification": false,
-    "modules": {
-        "module": [
-            {
-                "name": "Default",
-                "properties": {
-                    "property": [
-                        {
-                            "name": "usersCanResetOwnPasswords",
-                            "value": "true"
-                        },
-                        {
-                            "name": "usersCanChangeOwnPasswords",
-                            "value": "true"
-                        },
-                        {
-                            "name": "freeRegistrationAllowed",
-                            "value": "false"
-                        }
-                    ],
-                    "count": 3
-                }
-            },
-            {
-                "name": "Token-Auth",
-                "properties": {
-                    "property": [
-                        
-                    ],
-                    "count": 0
-                }
-            },
-            {
-                "name": "HTTP-Basic",
-                "properties": {
-                    "property": [
-                        
-                    ],
-                    "count": 0
-                }
-            }
-        ]
-    }
-}
-Request method:	PUT
-Request URI:	http://172.17.0.1:8111/app/rest/server/authSettings
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "perProjectPermissions": true,
-    "modules": {
-        "module": [
-            {
-                "name": "HTTP-Basic"
-            }
-        ]
-    }
-}
-HTTP/1.1 200 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=58BB029DE09757EF3C9189BBE7336D9C; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:27 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:17 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "allowGuest": false,
-    "guestUsername": "guest",
-    "collapseLoginForm": false,
-    "perProjectPermissions": true,
-    "emailVerification": false,
-    "modules": {
-        "module": [
-            {
-                "name": "HTTP-Basic",
-                "properties": {
-                    "property": [
-                        
-                    ],
-                    "count": 0
-                }
-            }
-        ]
-    }
-}
+  <testcase name="userCreatesBuildConfiguration" classname="com.example.teamcity.ui.CreateBuildTest" time="55.61">
+    <system-out><![CDATA[17:50:36.937 [main] DEBUG com.codeborne.selenide.impl.CiReportUrl - Variable selenide.reportsUrl not found
+17:50:37.290 [main] DEBUG com.codeborne.selenide.impl.Plugins - Using default implementation of com.codeborne.selenide.impl.Photographer: com.codeborne.selenide.impl.WebdriverPhotographer
+17:50:37.295 [main] DEBUG com.codeborne.selenide.impl.Plugins - Using default implementation of com.codeborne.selenide.impl.PageSourceExtractor: com.codeborne.selenide.impl.WebPageSourceExtractor
+17:50:37.310 [main] DEBUG com.codeborne.selenide.impl.Plugins - Using default implementation of com.codeborne.selenide.impl.PageObjectFactory: com.codeborne.selenide.impl.SelenidePageFactory
+17:50:37.321 [main] DEBUG com.codeborne.selenide.impl.Plugins - Using default implementation of com.codeborne.selenide.impl.WebElementSelector: com.codeborne.selenide.impl.WebElementSelector
+17:50:37.323 [main] DEBUG com.codeborne.selenide.impl.Plugins - Using default implementation of com.codeborne.selenide.impl.ElementDescriber: com.codeborne.selenide.impl.SelenideElementDescriber
 Request method:	POST
 Request URI:	http://172.17.0.1:8111/app/rest/users
 Proxy:			<none>
@@ -199,8 +78,8 @@ Multiparts:		<none>
 Body:
 {
     "id": null,
-    "username": "test_NTPZqRMkYc",
-    "password": "test_bBROvxLsFp",
+    "username": "test_bmWBxmCmBi",
+    "password": "test_VMLjxOlZXQ",
     "roles": {
         "role": [
             {
@@ -212,18 +91,18 @@ Body:
 }
 HTTP/1.1 200 
 TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=FB3F8EEA568D8B1C343BDF0B14EC344F; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:27 GMT; Path=/
+Set-Cookie: TCSESSIONID=6642257B392213C6F2AADDFA7C439FBB; Path=/; HttpOnly
+Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:50:49 GMT; Path=/
 Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
 Cache-Control: no-store
 Content-Type: application/json
 Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:18 GMT
+Date: Fri, 19 Dec 2025 17:50:39 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 
 {
-    "username": "test_ntpzqrmkyc",
+    "username": "test_bmwbxmcmbi",
     "id": 1,
     "href": "/app/rest/users/id:1",
     "properties": {
@@ -234,7 +113,7 @@ Connection: keep-alive
             },
             {
                 "name": "plugin:vcs:anyVcs:anyVcsRoot",
-                "value": "test_NTPZqRMkYc"
+                "value": "test_bmWBxmCmBi"
             },
             {
                 "name": "teamcity.server.buildNumber",
@@ -265,6 +144,24 @@ Connection: keep-alive
         ]
     }
 }
+17:50:40.439 [main] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+17:50:40.444 [main] DEBUG com.codeborne.selenide.drivercommands.CreateDriverCommand - Creating webdriver in thread 1 (ip: 10.1.0.164, host: runnervmh13bl)...
+17:50:40.445 [main] DEBUG com.codeborne.selenide.webdriver.WebDriverFactory - browser=chrome
+17:50:40.445 [main] DEBUG com.codeborne.selenide.webdriver.WebDriverFactory - browser.version=null
+17:50:40.445 [main] DEBUG com.codeborne.selenide.webdriver.WebDriverFactory - remote=http://localhost:4444/wd/hub
+17:50:40.445 [main] DEBUG com.codeborne.selenide.webdriver.WebDriverFactory - browserSize=1920x1080
+17:50:40.455 [main] DEBUG com.codeborne.selenide.webdriver.AbstractChromiumDriverFactory - Using chromium preferences: {credentials_enable_service=false, autofill.credit_card_enabled=false, autofill.profile_enabled=false, safebrowsing.enabled=true, plugins.always_open_pdf_externally=true, profile.default_content_setting_values.automatic_downloads=1, profile.password_manager_enabled=false, profile.password_manager_leak_detection=false}
+17:50:43.347 [main] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=122.0.6261.94 Platform=linux
+17:50:43.347 [main] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 7.4.3
+17:50:43.348 [main] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.24.0 build revision: 748ffc9bc3
+17:50:43.348 [main] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: RemoteWebDriver -> RemoteWebDriver: chrome on linux (ef9132aae0804711e493f563c07cda53), downloadsFolder: null
+17:50:43.351 [main] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig, webDriver=RemoteWebDriver: chrome on linux (ef9132aae0804711e493f563c07cda53), proxy=null, downloadsFolder=null] in 1 [size=1]
+17:50:43.357 [main] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Add shutdown hook in 1 [size=1]
+17:50:45.635 [main] DEBUG com.codeborne.selenide.impl.Plugins - Using default implementation of com.codeborne.selenide.commands.Clear: com.codeborne.selenide.commands.Clear
+17:50:45.664 [main] DEBUG com.codeborne.selenide.impl.Plugins - Using default implementation of com.codeborne.selenide.impl.DownloadFileToFolder: com.codeborne.selenide.impl.DownloadFileToFolder
+17:50:45.665 [main] DEBUG com.codeborne.selenide.impl.Plugins - Using default implementation of com.codeborne.selenide.impl.DownloadFileWithCdp: com.codeborne.selenide.impl.DownloadFileWithCdp
+17:50:45.670 [main] DEBUG com.codeborne.selenide.impl.Plugins - Using default implementation of com.codeborne.selenide.commands.Commands: com.codeborne.selenide.commands.Commands
+17:50:46.647 [main] DEBUG com.codeborne.selenide.impl.Plugins - Using default implementation of com.codeborne.selenide.ex.ErrorFormatter: com.codeborne.selenide.ex.SelenideErrorFormatter
 Request method:	POST
 Request URI:	http://172.17.0.1:8111/app/rest/projects
 Proxy:			<none>
@@ -278,28 +175,314 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "id": "",
-    "name": "test_PdROzPgEBS",
+    "id": "test_FXsIwwzpuw",
+    "name": "test_XhZWxJuyys",
     "locator": null
 }
-HTTP/1.1 500 
+HTTP/1.1 200 
 TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=01121EAB3774B33D9097E8F333736E8B; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:28 GMT; Path=/
+Set-Cookie: TCSESSIONID=2D9175BC39473F7422AA6D4D5014F426; Path=/; HttpOnly
+Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:21 GMT; Path=/
 Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
 Cache-Control: no-store
-Content-Type: text/plain
+Content-Type: application/json
 Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:18 GMT
-Connection: close
+Date: Fri, 19 Dec 2025 17:51:11 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
 
-Error has occurred during request processing, status code: 500 (Internal Server Error).
-Details: jetbrains.buildServer.serverSide.InvalidIdentifierException: Project ID must not be empty.
-Error occurred while processing this request.
+{
+    "id": "test_FXsIwwzpuw",
+    "name": "test_XhZWxJuyys",
+    "parentProjectId": "_Root",
+    "virtual": false,
+    "href": "/app/rest/projects/id:test_FXsIwwzpuw",
+    "webUrl": "http://localhost:8111/project.html?projectId=test_FXsIwwzpuw",
+    "parentProject": {
+        "id": "_Root",
+        "name": "<Root project>",
+        "description": "Contains all other projects",
+        "href": "/app/rest/projects/id:_Root",
+        "webUrl": "http://localhost:8111/project.html?projectId=_Root"
+    },
+    "buildTypes": {
+        "count": 0,
+        "buildType": [
+            
+        ]
+    },
+    "templates": {
+        "count": 0,
+        "buildType": [
+            
+        ]
+    },
+    "deploymentDashboards": {
+        "count": 0
+    },
+    "parameters": {
+        "property": [
+            
+        ],
+        "count": 0,
+        "href": "/app/rest/projects/id:test_FXsIwwzpuw/parameters"
+    },
+    "vcsRoots": {
+        "count": 0,
+        "href": "/app/rest/vcs-roots?locator=project:(id:test_FXsIwwzpuw)"
+    },
+    "projectFeatures": {
+        "count": 0,
+        "href": "/app/rest/projects/id:test_FXsIwwzpuw/projectFeatures"
+    },
+    "projects": {
+        "count": 0
+    }
+}
+Request method:	GET
+Request URI:	http://172.17.0.1:8111/app/rest/projects/id%3Atest_FXsIwwzpuw
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+TeamCity-Node-Id: MAIN_SERVER
+Set-Cookie: TCSESSIONID=C7A062BB45E5AD0EA7E6FC8DFF50145F; Path=/; HttpOnly
+Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:22 GMT; Path=/
+Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
+Cache-Control: no-store
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 19 Dec 2025 17:51:11 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": "test_FXsIwwzpuw",
+    "name": "test_XhZWxJuyys",
+    "parentProjectId": "_Root",
+    "virtual": false,
+    "href": "/app/rest/projects/id:test_FXsIwwzpuw",
+    "webUrl": "http://localhost:8111/project.html?projectId=test_FXsIwwzpuw",
+    "parentProject": {
+        "id": "_Root",
+        "name": "<Root project>",
+        "description": "Contains all other projects",
+        "href": "/app/rest/projects/id:_Root",
+        "webUrl": "http://localhost:8111/project.html?projectId=_Root"
+    },
+    "buildTypes": {
+        "count": 0,
+        "buildType": [
+            
+        ]
+    },
+    "templates": {
+        "count": 0,
+        "buildType": [
+            
+        ]
+    },
+    "deploymentDashboards": {
+        "count": 0
+    },
+    "parameters": {
+        "property": [
+            
+        ],
+        "count": 0,
+        "href": "/app/rest/projects/id:test_FXsIwwzpuw/parameters"
+    },
+    "vcsRoots": {
+        "count": 0,
+        "href": "/app/rest/vcs-roots?locator=project:(id:test_FXsIwwzpuw)"
+    },
+    "projectFeatures": {
+        "count": 0,
+        "href": "/app/rest/projects/id:test_FXsIwwzpuw/projectFeatures"
+    },
+    "projects": {
+        "count": 0
+    }
+}
+Request method:	GET
+Request URI:	http://172.17.0.1:8111/app/rest/buildTypes/name%3Atest_MYanitkqXz
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+TeamCity-Node-Id: MAIN_SERVER
+Set-Cookie: TCSESSIONID=3ECD2F82BE73BB9552A3E02360C50C78; Path=/; HttpOnly
+Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:40 GMT; Path=/
+Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
+Cache-Control: no-store
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 19 Dec 2025 17:51:31 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": "test_FXsIwwzpuw_TestMYanitkqXz",
+    "name": "test_MYanitkqXz",
+    "projectName": "test_XhZWxJuyys",
+    "projectId": "test_FXsIwwzpuw",
+    "href": "/app/rest/buildTypes/id:test_FXsIwwzpuw_TestMYanitkqXz",
+    "webUrl": "http://localhost:8111/viewType.html?buildTypeId=test_FXsIwwzpuw_TestMYanitkqXz",
+    "project": {
+        "id": "test_FXsIwwzpuw",
+        "name": "test_XhZWxJuyys",
+        "parentProjectId": "_Root",
+        "href": "/app/rest/projects/id:test_FXsIwwzpuw",
+        "webUrl": "http://localhost:8111/project.html?projectId=test_FXsIwwzpuw"
+    },
+    "templates": {
+        "count": 0,
+        "buildType": [
+            
+        ]
+    },
+    "vcs-root-entries": {
+        "count": 1,
+        "vcs-root-entry": [
+            {
+                "id": "test_FXsIwwzpuw_HttpsGithubComValemisemMapalTestingRefsHeadsMain",
+                "vcs-root": {
+                    "id": "test_FXsIwwzpuw_HttpsGithubComValemisemMapalTestingRefsHeadsMain",
+                    "name": "https://github.com/valemisem/mapal-testing#refs/heads/main",
+                    "href": "/app/rest/vcs-roots/id:test_FXsIwwzpuw_HttpsGithubComValemisemMapalTestingRefsHeadsMain"
+                },
+                "checkout-rules": ""
+            }
+        ]
+    },
+    "settings": {
+        "property": [
+            {
+                "name": "buildNumberCounter",
+                "value": "1"
+            }
+        ],
+        "count": 1
+    },
+    "parameters": {
+        "property": [
+            
+        ],
+        "count": 0,
+        "href": "/app/rest/buildTypes/id:test_FXsIwwzpuw_TestMYanitkqXz/parameters"
+    },
+    "steps": {
+        "count": 0
+    },
+    "features": {
+        "count": 1,
+        "feature": [
+            {
+                "id": "perfmon",
+                "type": "perfmon",
+                "properties": {
+                    "property": [
+                        {
+                            "name": "teamcity.perfmon.feature.enabled",
+                            "value": "true"
+                        }
+                    ],
+                    "count": 1
+                }
+            }
+        ]
+    },
+    "triggers": {
+        "count": 1,
+        "trigger": [
+            {
+                "id": "TRIGGER_1",
+                "type": "vcsTrigger",
+                "properties": {
+                    "property": [
+                        {
+                            "name": "branchFilter",
+                            "value": "+:*"
+                        },
+                        {
+                            "name": "enableQueueOptimization",
+                            "value": "true"
+                        },
+                        {
+                            "name": "quietPeriodMode",
+                            "value": "DO_NOT_USE"
+                        }
+                    ],
+                    "count": 3
+                }
+            }
+        ]
+    },
+    "snapshot-dependencies": {
+        "count": 0
+    },
+    "artifact-dependencies": {
+        "count": 0
+    },
+    "agent-requirements": {
+        "count": 0
+    },
+    "builds": {
+        "href": "/app/rest/buildTypes/id:test_FXsIwwzpuw_TestMYanitkqXz/builds/"
+    },
+    "investigations": {
+        "href": "/app/rest/investigations?locator=buildType:(id:test_FXsIwwzpuw_TestMYanitkqXz)"
+    },
+    "compatibleAgents": {
+        "href": "/app/rest/agents?locator=compatible:(buildType:(id:test_FXsIwwzpuw_TestMYanitkqXz))"
+    },
+    "compatibleCloudImages": {
+        
+    }
+}
+17:51:32.039 [main] DEBUG com.codeborne.selenide.impl.Plugins - Using default implementation of com.codeborne.selenide.impl.ElementCommunicator: com.codeborne.selenide.impl.WebElementCommunicator
 ]]></system-out>
   </testcase>
-  <testcase name="userCreatesProjectWithMalformattedIdTest" classname="com.example.teamcity.api.ProjectTest" time="0.351">
-    <system-out><![CDATA[Request method:	DELETE
+  <testcase name="userCreatesBuildConfigurationWithoutProject" classname="com.example.teamcity.ui.CreateBuildTest" time="12.593">
+    <system-out><![CDATA[17:51:32.824 [main] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Close webdriver: 1 -> RemoteWebDriver: chrome on linux (ef9132aae0804711e493f563c07cda53)...
+17:51:32.886 [main] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Closed webdriver 1 in 62 ms
+17:51:32.889 [main] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Unregister WebDriverInstance[config=StaticConfig, webDriver=RemoteWebDriver: chrome on linux (null), proxy=null, downloadsFolder=null] in 1 [size=0]
+Request method:	DELETE
+Request URI:	http://172.17.0.1:8111/app/rest/projects/test_FXsIwwzpuw
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 204 
+TeamCity-Node-Id: MAIN_SERVER
+Set-Cookie: TCSESSIONID=986358ACDF525AC7EF450846AD216ABB; Path=/; HttpOnly
+Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:42 GMT; Path=/
+Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
+Cache-Control: no-store
+Date: Fri, 19 Dec 2025 17:51:32 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+Request method:	DELETE
 Request URI:	http://172.17.0.1:8111/app/rest/users/1
 Proxy:			<none>
 Request params:	<none>
@@ -313,13 +496,13 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
 TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=67AE366007FA0151E048FEAD6BF761E8; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:28 GMT; Path=/
+Set-Cookie: TCSESSIONID=CF9F409D3BB7AB04105CD60479075360; Path=/; HttpOnly
+Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:43 GMT; Path=/
 Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
 Cache-Control: no-store
 Content-Type: text/plain
 Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:18 GMT
+Date: Fri, 19 Dec 2025 17:51:32 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 
@@ -340,8 +523,8 @@ Multiparts:		<none>
 Body:
 {
     "id": null,
-    "username": "test_XkAfpnkMLM",
-    "password": "test_XyrDJxRqxP",
+    "username": "test_sUbtugbGrK",
+    "password": "test_txosRWtWXf",
     "roles": {
         "role": [
             {
@@ -353,18 +536,18 @@ Body:
 }
 HTTP/1.1 200 
 TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=B96D84981AE74C67FE44F394576817E1; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:29 GMT; Path=/
+Set-Cookie: TCSESSIONID=E47A4E194E00EEBD87822518143A7D8D; Path=/; HttpOnly
+Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:43 GMT; Path=/
 Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
 Cache-Control: no-store
 Content-Type: application/json
 Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:19 GMT
+Date: Fri, 19 Dec 2025 17:51:33 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 
 {
-    "username": "test_xkafpnkmlm",
+    "username": "test_subtugbgrk",
     "id": 2,
     "href": "/app/rest/users/id:2",
     "properties": {
@@ -375,7 +558,7 @@ Connection: keep-alive
             },
             {
                 "name": "plugin:vcs:anyVcs:anyVcsRoot",
-                "value": "test_XkAfpnkMLM"
+                "value": "test_sUbtugbGrK"
             },
             {
                 "name": "teamcity.server.buildNumber",
@@ -406,6 +589,18 @@ Connection: keep-alive
         ]
     }
 }
+17:51:33.634 [main] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+17:51:33.635 [main] DEBUG com.codeborne.selenide.drivercommands.CreateDriverCommand - Creating webdriver in thread 1 (ip: 10.1.0.164, host: runnervmh13bl)...
+17:51:33.635 [main] DEBUG com.codeborne.selenide.webdriver.WebDriverFactory - browser=chrome
+17:51:33.635 [main] DEBUG com.codeborne.selenide.webdriver.WebDriverFactory - browser.version=null
+17:51:33.635 [main] DEBUG com.codeborne.selenide.webdriver.WebDriverFactory - remote=http://localhost:4444/wd/hub
+17:51:33.635 [main] DEBUG com.codeborne.selenide.webdriver.WebDriverFactory - browserSize=1920x1080
+17:51:33.635 [main] DEBUG com.codeborne.selenide.webdriver.AbstractChromiumDriverFactory - Using chromium preferences: {credentials_enable_service=false, autofill.credit_card_enabled=false, autofill.profile_enabled=false, safebrowsing.enabled=true, plugins.always_open_pdf_externally=true, profile.default_content_setting_values.automatic_downloads=1, profile.password_manager_enabled=false, profile.password_manager_leak_detection=false}
+17:51:36.083 [main] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=122.0.6261.94 Platform=linux
+17:51:36.083 [main] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 7.4.3
+17:51:36.083 [main] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.24.0 build revision: 748ffc9bc3
+17:51:36.083 [main] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: RemoteWebDriver -> RemoteWebDriver: chrome on linux (b8c9e602ff50340d5ff35e5c64459a10), downloadsFolder: null
+17:51:36.083 [main] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig, webDriver=RemoteWebDriver: chrome on linux (b8c9e602ff50340d5ff35e5c64459a10), proxy=null, downloadsFolder=null] in 1 [size=1]
 Request method:	POST
 Request URI:	http://172.17.0.1:8111/app/rest/projects
 Proxy:			<none>
@@ -419,28 +614,170 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "id": "0test_VMrWNjduab",
-    "name": "test_CByzUfIDml",
+    "id": "test_GPHPqHpYhS",
+    "name": "test_TMDRdKAbUt",
     "locator": null
 }
-HTTP/1.1 500 
+HTTP/1.1 200 
 TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=7C2A1D1E68B2D0B7051601E2AF1A9FA2; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:29 GMT; Path=/
+Set-Cookie: TCSESSIONID=F6DCF65202D960FBC209138479CF09D4; Path=/; HttpOnly
+Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:49 GMT; Path=/
 Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
 Cache-Control: no-store
-Content-Type: text/plain
+Content-Type: application/json
 Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:19 GMT
-Connection: close
+Date: Fri, 19 Dec 2025 17:51:38 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
 
-Error has occurred during request processing, status code: 500 (Internal Server Error).
-Details: jetbrains.buildServer.serverSide.InvalidIdentifierException: Project ID "0test_VMrWNjduab" is invalid: starts with non-letter character '0'. ID should start with a latin letter and contain only latin letters, digits and underscores (at most 225 characters).
-Error occurred while processing this request.
+{
+    "id": "test_GPHPqHpYhS",
+    "name": "test_TMDRdKAbUt",
+    "parentProjectId": "_Root",
+    "virtual": false,
+    "href": "/app/rest/projects/id:test_GPHPqHpYhS",
+    "webUrl": "http://localhost:8111/project.html?projectId=test_GPHPqHpYhS",
+    "parentProject": {
+        "id": "_Root",
+        "name": "<Root project>",
+        "description": "Contains all other projects",
+        "href": "/app/rest/projects/id:_Root",
+        "webUrl": "http://localhost:8111/project.html?projectId=_Root"
+    },
+    "buildTypes": {
+        "count": 0,
+        "buildType": [
+            
+        ]
+    },
+    "templates": {
+        "count": 0,
+        "buildType": [
+            
+        ]
+    },
+    "deploymentDashboards": {
+        "count": 0
+    },
+    "parameters": {
+        "property": [
+            
+        ],
+        "count": 0,
+        "href": "/app/rest/projects/id:test_GPHPqHpYhS/parameters"
+    },
+    "vcsRoots": {
+        "count": 0,
+        "href": "/app/rest/vcs-roots?locator=project:(id:test_GPHPqHpYhS)"
+    },
+    "projectFeatures": {
+        "count": 0,
+        "href": "/app/rest/projects/id:test_GPHPqHpYhS/projectFeatures"
+    },
+    "projects": {
+        "count": 0
+    }
+}
+Request method:	GET
+Request URI:	http://172.17.0.1:8111/app/rest/projects/id%3Atest_GPHPqHpYhS
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+TeamCity-Node-Id: MAIN_SERVER
+Set-Cookie: TCSESSIONID=D8A3F244EB035DAC8A2E240FB8AE5F63; Path=/; HttpOnly
+Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:49 GMT; Path=/
+Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
+Cache-Control: no-store
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Fri, 19 Dec 2025 17:51:38 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": "test_GPHPqHpYhS",
+    "name": "test_TMDRdKAbUt",
+    "parentProjectId": "_Root",
+    "virtual": false,
+    "href": "/app/rest/projects/id:test_GPHPqHpYhS",
+    "webUrl": "http://localhost:8111/project.html?projectId=test_GPHPqHpYhS",
+    "parentProject": {
+        "id": "_Root",
+        "name": "<Root project>",
+        "description": "Contains all other projects",
+        "href": "/app/rest/projects/id:_Root",
+        "webUrl": "http://localhost:8111/project.html?projectId=_Root"
+    },
+    "buildTypes": {
+        "count": 0,
+        "buildType": [
+            
+        ]
+    },
+    "templates": {
+        "count": 0,
+        "buildType": [
+            
+        ]
+    },
+    "deploymentDashboards": {
+        "count": 0
+    },
+    "parameters": {
+        "property": [
+            
+        ],
+        "count": 0,
+        "href": "/app/rest/projects/id:test_GPHPqHpYhS/parameters"
+    },
+    "vcsRoots": {
+        "count": 0,
+        "href": "/app/rest/vcs-roots?locator=project:(id:test_GPHPqHpYhS)"
+    },
+    "projectFeatures": {
+        "count": 0,
+        "href": "/app/rest/projects/id:test_GPHPqHpYhS/projectFeatures"
+    },
+    "projects": {
+        "count": 0
+    }
+}
 ]]></system-out>
   </testcase>
-  <testcase name="userCreatesTwoProjectsWithTheSameIdTest" classname="com.example.teamcity.api.ProjectTest" time="1.093">
-    <system-out><![CDATA[Request method:	DELETE
+  <testcase name="userCreatesProject" classname="com.example.teamcity.ui.CreateProjectTest" time="14.923">
+    <system-out><![CDATA[17:51:45.888 [main] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Close webdriver: 1 -> RemoteWebDriver: chrome on linux (b8c9e602ff50340d5ff35e5c64459a10)...
+17:51:45.952 [main] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Closed webdriver 1 in 64 ms
+17:51:45.954 [main] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Unregister WebDriverInstance[config=StaticConfig, webDriver=RemoteWebDriver: chrome on linux (null), proxy=null, downloadsFolder=null] in 1 [size=0]
+Request method:	DELETE
+Request URI:	http://172.17.0.1:8111/app/rest/projects/test_GPHPqHpYhS
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json, application/javascript, text/javascript, text/json
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 204 
+TeamCity-Node-Id: MAIN_SERVER
+Set-Cookie: TCSESSIONID=D1F06B1B7F4A05E7705DC1E7BE63DF9B; Path=/; HttpOnly
+Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:56 GMT; Path=/
+Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
+Cache-Control: no-store
+Date: Fri, 19 Dec 2025 17:51:46 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+Request method:	DELETE
 Request URI:	http://172.17.0.1:8111/app/rest/users/2
 Proxy:			<none>
 Request params:	<none>
@@ -454,13 +791,13 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
 TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=C9DE1086FCCE2550DDEBB9810BCBEC8D; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:29 GMT; Path=/
+Set-Cookie: TCSESSIONID=3B28CE37D8B9FCD10B35E7B91EBC2C29; Path=/; HttpOnly
+Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:56 GMT; Path=/
 Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
 Cache-Control: no-store
 Content-Type: text/plain
 Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:19 GMT
+Date: Fri, 19 Dec 2025 17:51:46 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 
@@ -481,8 +818,8 @@ Multiparts:		<none>
 Body:
 {
     "id": null,
-    "username": "test_YdJMDPHjwj",
-    "password": "test_sJBgnHOoFM",
+    "username": "test_iegkLnMwcb",
+    "password": "test_KBvftVOejf",
     "roles": {
         "role": [
             {
@@ -494,18 +831,18 @@ Body:
 }
 HTTP/1.1 200 
 TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=91D6BE35AE3D12AB9E806439E87E66E8; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:29 GMT; Path=/
+Set-Cookie: TCSESSIONID=0EF8F3ACCA91B50B20DDFE12A2FE2E70; Path=/; HttpOnly
+Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:56 GMT; Path=/
 Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
 Cache-Control: no-store
 Content-Type: application/json
 Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:19 GMT
+Date: Fri, 19 Dec 2025 17:51:46 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 
 {
-    "username": "test_ydjmdphjwj",
+    "username": "test_iegklnmwcb",
     "id": 3,
     "href": "/app/rest/users/id:3",
     "properties": {
@@ -516,7 +853,7 @@ Connection: keep-alive
             },
             {
                 "name": "plugin:vcs:anyVcs:anyVcsRoot",
-                "value": "test_YdJMDPHjwj"
+                "value": "test_iegkLnMwcb"
             },
             {
                 "name": "teamcity.server.buildNumber",
@@ -547,8 +884,20 @@ Connection: keep-alive
         ]
     }
 }
-Request method:	POST
-Request URI:	http://172.17.0.1:8111/app/rest/projects
+17:51:46.377 [main] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+17:51:46.377 [main] DEBUG com.codeborne.selenide.drivercommands.CreateDriverCommand - Creating webdriver in thread 1 (ip: 10.1.0.164, host: runnervmh13bl)...
+17:51:46.377 [main] DEBUG com.codeborne.selenide.webdriver.WebDriverFactory - browser=chrome
+17:51:46.377 [main] DEBUG com.codeborne.selenide.webdriver.WebDriverFactory - browser.version=null
+17:51:46.377 [main] DEBUG com.codeborne.selenide.webdriver.WebDriverFactory - remote=http://localhost:4444/wd/hub
+17:51:46.377 [main] DEBUG com.codeborne.selenide.webdriver.WebDriverFactory - browserSize=1920x1080
+17:51:46.377 [main] DEBUG com.codeborne.selenide.webdriver.AbstractChromiumDriverFactory - Using chromium preferences: {credentials_enable_service=false, autofill.credit_card_enabled=false, autofill.profile_enabled=false, safebrowsing.enabled=true, plugins.always_open_pdf_externally=true, profile.default_content_setting_values.automatic_downloads=1, profile.password_manager_enabled=false, profile.password_manager_leak_detection=false}
+17:51:47.780 [main] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=122.0.6261.94 Platform=linux
+17:51:47.780 [main] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 7.4.3
+17:51:47.780 [main] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.24.0 build revision: 748ffc9bc3
+17:51:47.780 [main] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: RemoteWebDriver -> RemoteWebDriver: chrome on linux (55813d509d3c55ae838b992b6f71d1f4), downloadsFolder: null
+17:51:47.780 [main] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig, webDriver=RemoteWebDriver: chrome on linux (55813d509d3c55ae838b992b6f71d1f4), proxy=null, downloadsFolder=null] in 1 [size=1]
+Request method:	GET
+Request URI:	http://172.17.0.1:8111/app/rest/projects/name%3Atest_bOaDMxDJjD
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -558,31 +907,26 @@ Headers:		Accept=application/json, application/javascript, text/javascript, text
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
-Body:
-{
-    "id": "test_jPgGsRLxzb",
-    "name": "test_IdcBnOCPPL",
-    "locator": null
-}
+Body:			<none>
 HTTP/1.1 200 
 TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=13F84EAF00A2FFC3777CEA3E98B001FF; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:29 GMT; Path=/
+Set-Cookie: TCSESSIONID=BF8CA0C439565BF65FEEE8E4784BA620; Path=/; HttpOnly
+Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:52:08 GMT; Path=/
 Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
 Cache-Control: no-store
 Content-Type: application/json
 Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:20 GMT
+Date: Fri, 19 Dec 2025 17:51:57 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 
 {
-    "id": "test_jPgGsRLxzb",
-    "name": "test_IdcBnOCPPL",
+    "id": "TestBOaDMxDJjD",
+    "name": "test_bOaDMxDJjD",
     "parentProjectId": "_Root",
     "virtual": false,
-    "href": "/app/rest/projects/id:test_jPgGsRLxzb",
-    "webUrl": "http://localhost:8111/project.html?projectId=test_jPgGsRLxzb",
+    "href": "/app/rest/projects/id:TestBOaDMxDJjD",
+    "webUrl": "http://localhost:8111/project.html?projectId=TestBOaDMxDJjD",
     "parentProject": {
         "id": "_Root",
         "name": "<Root project>",
@@ -591,9 +935,16 @@ Connection: keep-alive
         "webUrl": "http://localhost:8111/project.html?projectId=_Root"
     },
     "buildTypes": {
-        "count": 0,
+        "count": 1,
         "buildType": [
-            
+            {
+                "id": "TestBOaDMxDJjD_TestLbKBmNMxFs",
+                "name": "test_LbKBmNMxFs",
+                "projectName": "test_bOaDMxDJjD",
+                "projectId": "TestBOaDMxDJjD",
+                "href": "/app/rest/buildTypes/id:TestBOaDMxDJjD_TestLbKBmNMxFs",
+                "webUrl": "http://localhost:8111/viewType.html?buildTypeId=TestBOaDMxDJjD_TestLbKBmNMxFs"
+            }
         ]
     },
     "templates": {
@@ -610,75 +961,26 @@ Connection: keep-alive
             
         ],
         "count": 0,
-        "href": "/app/rest/projects/id:test_jPgGsRLxzb/parameters"
+        "href": "/app/rest/projects/id:TestBOaDMxDJjD/parameters"
     },
     "vcsRoots": {
-        "count": 0,
-        "href": "/app/rest/vcs-roots?locator=project:(id:test_jPgGsRLxzb)"
+        "count": 1,
+        "href": "/app/rest/vcs-roots?locator=project:(id:TestBOaDMxDJjD)"
     },
     "projectFeatures": {
         "count": 0,
-        "href": "/app/rest/projects/id:test_jPgGsRLxzb/projectFeatures"
+        "href": "/app/rest/projects/id:TestBOaDMxDJjD/projectFeatures"
     },
     "projects": {
         "count": 0
     }
 }
-Request method:	POST
-Request URI:	http://172.17.0.1:8111/app/rest/projects
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": "test_jPgGsRLxzb",
-    "name": "test_PYWOEEAqch",
-    "locator": null
-}
-HTTP/1.1 400 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=1C7E42FDC44364E79C19F666D2C46551; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:30 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: text/plain
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:20 GMT
-Connection: close
-
-Responding with error, status code: 400 (Bad Request).
-Details: jetbrains.buildServer.serverSide.identifiers.DuplicateExternalIdException: Project ID "test_jPgGsRLxzb" is already used by another project
-Error occurred while processing this request.
 ]]></system-out>
   </testcase>
-  <testcase name="userCreatesTwoProjectsWithTheSameNameTest" classname="com.example.teamcity.api.ProjectTest" time="0.477">
-    <system-out><![CDATA[Request method:	DELETE
-Request URI:	http://172.17.0.1:8111/app/rest/projects/test_jPgGsRLxzb
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 204 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=BEE44FF11542C5A694B3FAF027C6B775; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:30 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Date: Fri, 19 Dec 2025 17:51:20 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
+  <testcase name="userCreatesProjectWithoutName" classname="com.example.teamcity.ui.CreateProjectTest" time="10.472">
+    <system-out><![CDATA[17:52:01.145 [main] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Close webdriver: 1 -> RemoteWebDriver: chrome on linux (55813d509d3c55ae838b992b6f71d1f4)...
+17:52:01.208 [main] INFO com.codeborne.selenide.drivercommands.CloseDriverCommand - Closed webdriver 1 in 63 ms
+17:52:01.208 [main] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Unregister WebDriverInstance[config=StaticConfig, webDriver=RemoteWebDriver: chrome on linux (null), proxy=null, downloadsFolder=null] in 1 [size=0]
 Request method:	DELETE
 Request URI:	http://172.17.0.1:8111/app/rest/users/3
 Proxy:			<none>
@@ -693,13 +995,13 @@ Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
 TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=41E39DB856B0383279E87E6BA587FF18; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:30 GMT; Path=/
+Set-Cookie: TCSESSIONID=AC8F121166B43153BFBD29CE8075B9BC; Path=/; HttpOnly
+Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:52:11 GMT; Path=/
 Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
 Cache-Control: no-store
 Content-Type: text/plain
 Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:20 GMT
+Date: Fri, 19 Dec 2025 17:52:00 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 
@@ -720,8 +1022,8 @@ Multiparts:		<none>
 Body:
 {
     "id": null,
-    "username": "test_ohfTbJwzEQ",
-    "password": "test_JpPQMykbpm",
+    "username": "test_RKauDUaKOm",
+    "password": "test_emPGTKFXKx",
     "roles": {
         "role": [
             {
@@ -733,18 +1035,18 @@ Body:
 }
 HTTP/1.1 200 
 TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=6F21D5A255E6D16CAB5E5F195C131C73; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:30 GMT; Path=/
+Set-Cookie: TCSESSIONID=09D70A97B8D52A56B04C274F3418E5C1; Path=/; HttpOnly
+Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:52:11 GMT; Path=/
 Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
 Cache-Control: no-store
 Content-Type: application/json
 Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:20 GMT
+Date: Fri, 19 Dec 2025 17:52:00 GMT
 Keep-Alive: timeout=60
 Connection: keep-alive
 
 {
-    "username": "test_ohftbjwzeq",
+    "username": "test_rkauduakom",
     "id": 4,
     "href": "/app/rest/users/id:4",
     "properties": {
@@ -755,7 +1057,7 @@ Connection: keep-alive
             },
             {
                 "name": "plugin:vcs:anyVcs:anyVcsRoot",
-                "value": "test_ohfTbJwzEQ"
+                "value": "test_RKauDUaKOm"
             },
             {
                 "name": "teamcity.server.buildNumber",
@@ -786,2061 +1088,18 @@ Connection: keep-alive
         ]
     }
 }
-Request method:	POST
-Request URI:	http://172.17.0.1:8111/app/rest/projects
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": "test_tJUxZmAuhp",
-    "name": "test_zynfIDRnBE",
-    "locator": null
-}
-HTTP/1.1 200 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=8FEEB35DF1BD9F3BBD2F84E056244CBF; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:31 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:20 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "id": "test_tJUxZmAuhp",
-    "name": "test_zynfIDRnBE",
-    "parentProjectId": "_Root",
-    "virtual": false,
-    "href": "/app/rest/projects/id:test_tJUxZmAuhp",
-    "webUrl": "http://localhost:8111/project.html?projectId=test_tJUxZmAuhp",
-    "parentProject": {
-        "id": "_Root",
-        "name": "<Root project>",
-        "description": "Contains all other projects",
-        "href": "/app/rest/projects/id:_Root",
-        "webUrl": "http://localhost:8111/project.html?projectId=_Root"
-    },
-    "buildTypes": {
-        "count": 0,
-        "buildType": [
-            
-        ]
-    },
-    "templates": {
-        "count": 0,
-        "buildType": [
-            
-        ]
-    },
-    "deploymentDashboards": {
-        "count": 0
-    },
-    "parameters": {
-        "property": [
-            
-        ],
-        "count": 0,
-        "href": "/app/rest/projects/id:test_tJUxZmAuhp/parameters"
-    },
-    "vcsRoots": {
-        "count": 0,
-        "href": "/app/rest/vcs-roots?locator=project:(id:test_tJUxZmAuhp)"
-    },
-    "projectFeatures": {
-        "count": 0,
-        "href": "/app/rest/projects/id:test_tJUxZmAuhp/projectFeatures"
-    },
-    "projects": {
-        "count": 0
-    }
-}
-Request method:	POST
-Request URI:	http://172.17.0.1:8111/app/rest/projects
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": null,
-    "name": "test_zynfIDRnBE",
-    "locator": null
-}
-HTTP/1.1 400 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=4B8B1365D96F0C59CD264DE45639F39E; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:31 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: text/plain
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:20 GMT
-Connection: close
-
-Responding with error, status code: 400 (Bad Request).
-Details: jetbrains.buildServer.serverSide.DuplicateProjectNameException: Project with this name already exists: test_zynfIDRnBE
-Error occurred while processing this request.
-]]></system-out>
-  </testcase>
-  <testcase name="userShouldBeAbleCreateProjectTest" classname="com.example.teamcity.api.ProjectTest" time="0.484">
-    <system-out><![CDATA[Request method:	DELETE
-Request URI:	http://172.17.0.1:8111/app/rest/projects/test_tJUxZmAuhp
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 204 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=D835FBD707F9FE97C9B355E3364700EB; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:31 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Date: Fri, 19 Dec 2025 17:51:21 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-Request method:	DELETE
-Request URI:	http://172.17.0.1:8111/app/rest/users/4
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 404 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=CA2C44619EFB09ED84CDB067FE00EB29; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:31 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: text/plain
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:21 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-Responding with error, status code: 404 (Not Found).
-Details: jetbrains.buildServer.server.rest.errors.NotFoundException: User not found
-Could not find the entity requested. Check the reference is correct and the user has permissions to access the entity.
-Request method:	POST
-Request URI:	http://172.17.0.1:8111/app/rest/users
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": null,
-    "username": "test_wJlBtQahRZ",
-    "password": "test_IRuzLHsmNk",
-    "roles": {
-        "role": [
-            {
-                "roleId": "SYSTEM_ADMIN",
-                "scope": "g"
-            }
-        ]
-    }
-}
-HTTP/1.1 200 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=83880EF4E29D09914E49F7437B5D96CA; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:31 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:21 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "username": "test_wjlbtqahrz",
-    "id": 5,
-    "href": "/app/rest/users/id:5",
-    "properties": {
-        "property": [
-            {
-                "name": "addTriggeredBuildToFavorites",
-                "value": "true"
-            },
-            {
-                "name": "plugin:vcs:anyVcs:anyVcsRoot",
-                "value": "test_wJlBtQahRZ"
-            },
-            {
-                "name": "teamcity.server.buildNumber",
-                "value": "147412"
-            }
-        ],
-        "count": 3,
-        "href": "/app/rest/users/id:5/properties"
-    },
-    "roles": {
-        "role": [
-            {
-                "roleId": "SYSTEM_ADMIN",
-                "scope": "g",
-                "href": "/app/rest/users/id:5/roles/SYSTEM_ADMIN/g"
-            }
-        ]
-    },
-    "groups": {
-        "count": 1,
-        "group": [
-            {
-                "key": "ALL_USERS_GROUP",
-                "name": "All Users",
-                "href": "/app/rest/userGroups/key:ALL_USERS_GROUP",
-                "description": "Contains all TeamCity users"
-            }
-        ]
-    }
-}
-Request method:	POST
-Request URI:	http://172.17.0.1:8111/app/rest/projects
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": "test_FTtvWHRaJe",
-    "name": "test_zkqBSIBFpR",
-    "locator": null
-}
-HTTP/1.1 200 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=EE89951233D7EC423A8B686CD9D98CDB; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:31 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:21 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "id": "test_FTtvWHRaJe",
-    "name": "test_zkqBSIBFpR",
-    "parentProjectId": "_Root",
-    "virtual": false,
-    "href": "/app/rest/projects/id:test_FTtvWHRaJe",
-    "webUrl": "http://localhost:8111/project.html?projectId=test_FTtvWHRaJe",
-    "parentProject": {
-        "id": "_Root",
-        "name": "<Root project>",
-        "description": "Contains all other projects",
-        "href": "/app/rest/projects/id:_Root",
-        "webUrl": "http://localhost:8111/project.html?projectId=_Root"
-    },
-    "buildTypes": {
-        "count": 0,
-        "buildType": [
-            
-        ]
-    },
-    "templates": {
-        "count": 0,
-        "buildType": [
-            
-        ]
-    },
-    "deploymentDashboards": {
-        "count": 0
-    },
-    "parameters": {
-        "property": [
-            
-        ],
-        "count": 0,
-        "href": "/app/rest/projects/id:test_FTtvWHRaJe/parameters"
-    },
-    "vcsRoots": {
-        "count": 0,
-        "href": "/app/rest/vcs-roots?locator=project:(id:test_FTtvWHRaJe)"
-    },
-    "projectFeatures": {
-        "count": 0,
-        "href": "/app/rest/projects/id:test_FTtvWHRaJe/projectFeatures"
-    },
-    "projects": {
-        "count": 0
-    }
-}
-Request method:	GET
-Request URI:	http://172.17.0.1:8111/app/rest/projects/test_FTtvWHRaJe
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=6D0453A1056A5FB610F3D77F2FDA4B46; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:32 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:21 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "id": "test_FTtvWHRaJe",
-    "name": "test_zkqBSIBFpR",
-    "parentProjectId": "_Root",
-    "virtual": false,
-    "href": "/app/rest/projects/id:test_FTtvWHRaJe",
-    "webUrl": "http://localhost:8111/project.html?projectId=test_FTtvWHRaJe",
-    "parentProject": {
-        "id": "_Root",
-        "name": "<Root project>",
-        "description": "Contains all other projects",
-        "href": "/app/rest/projects/id:_Root",
-        "webUrl": "http://localhost:8111/project.html?projectId=_Root"
-    },
-    "buildTypes": {
-        "count": 0,
-        "buildType": [
-            
-        ]
-    },
-    "templates": {
-        "count": 0,
-        "buildType": [
-            
-        ]
-    },
-    "deploymentDashboards": {
-        "count": 0
-    },
-    "parameters": {
-        "property": [
-            
-        ],
-        "count": 0,
-        "href": "/app/rest/projects/id:test_FTtvWHRaJe/parameters"
-    },
-    "vcsRoots": {
-        "count": 0,
-        "href": "/app/rest/vcs-roots?locator=project:(id:test_FTtvWHRaJe)"
-    },
-    "projectFeatures": {
-        "count": 0,
-        "href": "/app/rest/projects/id:test_FTtvWHRaJe/projectFeatures"
-    },
-    "projects": {
-        "count": 0
-    }
-}
-]]></system-out>
-  </testcase>
-  <testcase name="projectAdminCreatesBuildTypeForAnotherUserProjectTest" classname="com.example.teamcity.api.BuildTypeTest" time="0.758">
-    <system-out><![CDATA[Request method:	DELETE
-Request URI:	http://172.17.0.1:8111/app/rest/projects/test_FTtvWHRaJe
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 204 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=A9D48250694C4228D5C6C6577B14D5A4; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:32 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Date: Fri, 19 Dec 2025 17:51:21 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-Request method:	DELETE
-Request URI:	http://172.17.0.1:8111/app/rest/users/5
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 404 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=C1039FC73BD0CFBF97957A0D7EEC124B; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:32 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: text/plain
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:21 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-Responding with error, status code: 404 (Not Found).
-Details: jetbrains.buildServer.server.rest.errors.NotFoundException: User not found
-Could not find the entity requested. Check the reference is correct and the user has permissions to access the entity.
-Request method:	POST
-Request URI:	http://172.17.0.1:8111/app/rest/projects
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": "test_EijGKFvXym",
-    "name": "test_sumSewstsK",
-    "locator": null
-}
-HTTP/1.1 200 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=E1E500F1BCD4C2C4572809C2DBD2455D; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:32 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:21 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "id": "test_EijGKFvXym",
-    "name": "test_sumSewstsK",
-    "parentProjectId": "_Root",
-    "virtual": false,
-    "href": "/app/rest/projects/id:test_EijGKFvXym",
-    "webUrl": "http://localhost:8111/project.html?projectId=test_EijGKFvXym",
-    "parentProject": {
-        "id": "_Root",
-        "name": "<Root project>",
-        "description": "Contains all other projects",
-        "href": "/app/rest/projects/id:_Root",
-        "webUrl": "http://localhost:8111/project.html?projectId=_Root"
-    },
-    "buildTypes": {
-        "count": 0,
-        "buildType": [
-            
-        ]
-    },
-    "templates": {
-        "count": 0,
-        "buildType": [
-            
-        ]
-    },
-    "deploymentDashboards": {
-        "count": 0
-    },
-    "parameters": {
-        "property": [
-            
-        ],
-        "count": 0,
-        "href": "/app/rest/projects/id:test_EijGKFvXym/parameters"
-    },
-    "vcsRoots": {
-        "count": 0,
-        "href": "/app/rest/vcs-roots?locator=project:(id:test_EijGKFvXym)"
-    },
-    "projectFeatures": {
-        "count": 0,
-        "href": "/app/rest/projects/id:test_EijGKFvXym/projectFeatures"
-    },
-    "projects": {
-        "count": 0
-    }
-}
-Request method:	POST
-Request URI:	http://172.17.0.1:8111/app/rest/users
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": null,
-    "username": "test_LXTwmAxPpo",
-    "password": "test_bDEgUdpjuS",
-    "roles": {
-        "role": [
-            {
-                "roleId": "PROJECT_ADMIN",
-                "scope": "p:test_EijGKFvXym"
-            }
-        ]
-    }
-}
-HTTP/1.1 200 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=52FE92DB28F31600A0FC502C25880D38; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:32 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:22 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "username": "test_lxtwmaxppo",
-    "id": 6,
-    "href": "/app/rest/users/id:6",
-    "properties": {
-        "property": [
-            {
-                "name": "addTriggeredBuildToFavorites",
-                "value": "true"
-            },
-            {
-                "name": "plugin:vcs:anyVcs:anyVcsRoot",
-                "value": "test_LXTwmAxPpo"
-            },
-            {
-                "name": "teamcity.server.buildNumber",
-                "value": "147412"
-            }
-        ],
-        "count": 3,
-        "href": "/app/rest/users/id:6/properties"
-    },
-    "roles": {
-        "role": [
-            {
-                "roleId": "PROJECT_ADMIN",
-                "scope": "p:test_EijGKFvXym",
-                "href": "/app/rest/users/id:6/roles/PROJECT_ADMIN/p:test_EijGKFvXym"
-            }
-        ]
-    },
-    "groups": {
-        "count": 1,
-        "group": [
-            {
-                "key": "ALL_USERS_GROUP",
-                "name": "All Users",
-                "href": "/app/rest/userGroups/key:ALL_USERS_GROUP",
-                "description": "Contains all TeamCity users"
-            }
-        ]
-    }
-}
-Request method:	POST
-Request URI:	http://172.17.0.1:8111/app/rest/projects
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": "test_OxvOHLnYPO",
-    "name": "test_faYPsIRrEu",
-    "locator": null
-}
-HTTP/1.1 200 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=850D59A867E6C4C4165AF22A91FB230A; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:32 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:22 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "id": "test_OxvOHLnYPO",
-    "name": "test_faYPsIRrEu",
-    "parentProjectId": "_Root",
-    "virtual": false,
-    "href": "/app/rest/projects/id:test_OxvOHLnYPO",
-    "webUrl": "http://localhost:8111/project.html?projectId=test_OxvOHLnYPO",
-    "parentProject": {
-        "id": "_Root",
-        "name": "<Root project>",
-        "description": "Contains all other projects",
-        "href": "/app/rest/projects/id:_Root",
-        "webUrl": "http://localhost:8111/project.html?projectId=_Root"
-    },
-    "buildTypes": {
-        "count": 0,
-        "buildType": [
-            
-        ]
-    },
-    "templates": {
-        "count": 0,
-        "buildType": [
-            
-        ]
-    },
-    "deploymentDashboards": {
-        "count": 0
-    },
-    "parameters": {
-        "property": [
-            
-        ],
-        "count": 0,
-        "href": "/app/rest/projects/id:test_OxvOHLnYPO/parameters"
-    },
-    "vcsRoots": {
-        "count": 0,
-        "href": "/app/rest/vcs-roots?locator=project:(id:test_OxvOHLnYPO)"
-    },
-    "projectFeatures": {
-        "count": 0,
-        "href": "/app/rest/projects/id:test_OxvOHLnYPO/projectFeatures"
-    },
-    "projects": {
-        "count": 0
-    }
-}
-Request method:	POST
-Request URI:	http://172.17.0.1:8111/app/rest/users
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": null,
-    "username": "test_CBSDJdBmid",
-    "password": "test_wilYoXRwHR",
-    "roles": {
-        "role": [
-            {
-                "roleId": "PROJECT_ADMIN",
-                "scope": "p:test_OxvOHLnYPO"
-            }
-        ]
-    }
-}
-HTTP/1.1 200 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=18BEA6D2B2A22E024ED5F1F05191070F; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:32 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:22 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "username": "test_cbsdjdbmid",
-    "id": 7,
-    "href": "/app/rest/users/id:7",
-    "properties": {
-        "property": [
-            {
-                "name": "addTriggeredBuildToFavorites",
-                "value": "true"
-            },
-            {
-                "name": "plugin:vcs:anyVcs:anyVcsRoot",
-                "value": "test_CBSDJdBmid"
-            },
-            {
-                "name": "teamcity.server.buildNumber",
-                "value": "147412"
-            }
-        ],
-        "count": 3,
-        "href": "/app/rest/users/id:7/properties"
-    },
-    "roles": {
-        "role": [
-            {
-                "roleId": "PROJECT_ADMIN",
-                "scope": "p:test_OxvOHLnYPO",
-                "href": "/app/rest/users/id:7/roles/PROJECT_ADMIN/p:test_OxvOHLnYPO"
-            }
-        ]
-    },
-    "groups": {
-        "count": 1,
-        "group": [
-            {
-                "key": "ALL_USERS_GROUP",
-                "name": "All Users",
-                "href": "/app/rest/userGroups/key:ALL_USERS_GROUP",
-                "description": "Contains all TeamCity users"
-            }
-        ]
-    }
-}
-Request method:	POST
-Request URI:	http://172.17.0.1:8111/app/rest/buildTypes
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": "test_WVtTTQtEra",
-    "name": "test_dqMnqtAXrZ",
-    "project": {
-        "id": "test_EijGKFvXym",
-        "name": "test_sumSewstsK",
-        "locator": null
-    },
-    "steps": null
-}
-HTTP/1.1 403 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=AB2D9762CA47A75F649C3CFDEA852B22; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:32 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: text/plain
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:22 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-Responding with error, status code: 403 (Forbidden).
-Details: jetbrains.buildServer.serverSide.auth.AccessDeniedException: You do not have enough permissions to edit project with id: test_EijGKFvXym
-Access denied. Check the user has enough permissions to perform the operation.
-]]></system-out>
-  </testcase>
-  <testcase name="projectAdminCreatesBuildTypeForTheirProjectTest" classname="com.example.teamcity.api.BuildTypeTest" time="1.184">
-    <system-out><![CDATA[Request method:	DELETE
-Request URI:	http://172.17.0.1:8111/app/rest/projects/test_OxvOHLnYPO
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 204 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=6F5BAA20B593901BAD88882EFE62801E; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:33 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Date: Fri, 19 Dec 2025 17:51:22 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-Request method:	DELETE
-Request URI:	http://172.17.0.1:8111/app/rest/projects/test_EijGKFvXym
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 204 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=CDBEB356A01848B5BD072C8D2BDDE598; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:33 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Date: Fri, 19 Dec 2025 17:51:22 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-Request method:	DELETE
-Request URI:	http://172.17.0.1:8111/app/rest/users/6
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 404 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=74A1F507C6FB26EF24266775ECABCB8C; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:33 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: text/plain
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:22 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-Responding with error, status code: 404 (Not Found).
-Details: jetbrains.buildServer.server.rest.errors.NotFoundException: User not found
-Could not find the entity requested. Check the reference is correct and the user has permissions to access the entity.
-Request method:	DELETE
-Request URI:	http://172.17.0.1:8111/app/rest/users/7
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 404 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=E3A2F5CFBDE4CB29FF35D2B7F53A65C4; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:33 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: text/plain
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:22 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-Responding with error, status code: 404 (Not Found).
-Details: jetbrains.buildServer.server.rest.errors.NotFoundException: User not found
-Could not find the entity requested. Check the reference is correct and the user has permissions to access the entity.
-Request method:	POST
-Request URI:	http://172.17.0.1:8111/app/rest/projects
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": "test_rblVkTySti",
-    "name": "test_okBkrjlKsU",
-    "locator": null
-}
-HTTP/1.1 200 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=A708A2A5CDE8119690D1EC9915D4ADE1; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:33 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:22 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "id": "test_rblVkTySti",
-    "name": "test_okBkrjlKsU",
-    "parentProjectId": "_Root",
-    "virtual": false,
-    "href": "/app/rest/projects/id:test_rblVkTySti",
-    "webUrl": "http://localhost:8111/project.html?projectId=test_rblVkTySti",
-    "parentProject": {
-        "id": "_Root",
-        "name": "<Root project>",
-        "description": "Contains all other projects",
-        "href": "/app/rest/projects/id:_Root",
-        "webUrl": "http://localhost:8111/project.html?projectId=_Root"
-    },
-    "buildTypes": {
-        "count": 0,
-        "buildType": [
-            
-        ]
-    },
-    "templates": {
-        "count": 0,
-        "buildType": [
-            
-        ]
-    },
-    "deploymentDashboards": {
-        "count": 0
-    },
-    "parameters": {
-        "property": [
-            
-        ],
-        "count": 0,
-        "href": "/app/rest/projects/id:test_rblVkTySti/parameters"
-    },
-    "vcsRoots": {
-        "count": 0,
-        "href": "/app/rest/vcs-roots?locator=project:(id:test_rblVkTySti)"
-    },
-    "projectFeatures": {
-        "count": 0,
-        "href": "/app/rest/projects/id:test_rblVkTySti/projectFeatures"
-    },
-    "projects": {
-        "count": 0
-    }
-}
-Request method:	POST
-Request URI:	http://172.17.0.1:8111/app/rest/users
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": null,
-    "username": "test_KTpAyRiRpD",
-    "password": "test_FwGwUSjzCi",
-    "roles": {
-        "role": [
-            {
-                "roleId": "PROJECT_ADMIN",
-                "scope": "p:test_rblVkTySti"
-            }
-        ]
-    }
-}
-HTTP/1.1 200 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=F98E1886ADBECBFA0C8313F9BD16683F; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:33 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:23 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "username": "test_ktpayrirpd",
-    "id": 8,
-    "href": "/app/rest/users/id:8",
-    "properties": {
-        "property": [
-            {
-                "name": "addTriggeredBuildToFavorites",
-                "value": "true"
-            },
-            {
-                "name": "plugin:vcs:anyVcs:anyVcsRoot",
-                "value": "test_KTpAyRiRpD"
-            },
-            {
-                "name": "teamcity.server.buildNumber",
-                "value": "147412"
-            }
-        ],
-        "count": 3,
-        "href": "/app/rest/users/id:8/properties"
-    },
-    "roles": {
-        "role": [
-            {
-                "roleId": "PROJECT_ADMIN",
-                "scope": "p:test_rblVkTySti",
-                "href": "/app/rest/users/id:8/roles/PROJECT_ADMIN/p:test_rblVkTySti"
-            }
-        ]
-    },
-    "groups": {
-        "count": 1,
-        "group": [
-            {
-                "key": "ALL_USERS_GROUP",
-                "name": "All Users",
-                "href": "/app/rest/userGroups/key:ALL_USERS_GROUP",
-                "description": "Contains all TeamCity users"
-            }
-        ]
-    }
-}
-Request method:	POST
-Request URI:	http://172.17.0.1:8111/app/rest/buildTypes
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": "test_eDSObcaXWZ",
-    "name": "test_pbAUfuBZsR",
-    "project": {
-        "id": "test_rblVkTySti",
-        "name": "test_okBkrjlKsU",
-        "locator": null
-    },
-    "steps": null
-}
-HTTP/1.1 200 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=0516F4D1C15598E1CE0583AFF2443C0D; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:33 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:23 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "id": "test_eDSObcaXWZ",
-    "name": "test_pbAUfuBZsR",
-    "projectName": "test_okBkrjlKsU",
-    "projectId": "test_rblVkTySti",
-    "href": "/app/rest/buildTypes/id:test_eDSObcaXWZ",
-    "webUrl": "http://localhost:8111/viewType.html?buildTypeId=test_eDSObcaXWZ",
-    "project": {
-        "id": "test_rblVkTySti",
-        "name": "test_okBkrjlKsU",
-        "parentProjectId": "_Root",
-        "href": "/app/rest/projects/id:test_rblVkTySti",
-        "webUrl": "http://localhost:8111/project.html?projectId=test_rblVkTySti"
-    },
-    "templates": {
-        "count": 0,
-        "buildType": [
-            
-        ]
-    },
-    "vcs-root-entries": {
-        "count": 0,
-        "vcs-root-entry": [
-            
-        ]
-    },
-    "settings": {
-        "property": [
-            {
-                "name": "buildNumberCounter",
-                "value": "1"
-            }
-        ],
-        "count": 1
-    },
-    "parameters": {
-        "property": [
-            
-        ],
-        "count": 0,
-        "href": "/app/rest/buildTypes/id:test_eDSObcaXWZ/parameters"
-    },
-    "steps": {
-        "count": 0
-    },
-    "features": {
-        "count": 0
-    },
-    "triggers": {
-        "count": 0
-    },
-    "snapshot-dependencies": {
-        "count": 0
-    },
-    "artifact-dependencies": {
-        "count": 0
-    },
-    "agent-requirements": {
-        "count": 0
-    },
-    "builds": {
-        "href": "/app/rest/buildTypes/id:test_eDSObcaXWZ/builds/"
-    },
-    "investigations": {
-        "href": "/app/rest/investigations?locator=buildType:(id:test_eDSObcaXWZ)"
-    },
-    "compatibleAgents": {
-        "href": "/app/rest/agents?locator=compatible:(buildType:(id:test_eDSObcaXWZ))"
-    },
-    "compatibleCloudImages": {
-        
-    }
-}
-Request method:	GET
-Request URI:	http://172.17.0.1:8111/app/rest/buildTypes/id%3Atest_eDSObcaXWZ
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=50CF3A9204F8F5138E5F1CE8347727D2; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:34 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:24 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "id": "test_eDSObcaXWZ",
-    "name": "test_pbAUfuBZsR",
-    "projectName": "test_okBkrjlKsU",
-    "projectId": "test_rblVkTySti",
-    "href": "/app/rest/buildTypes/id:test_eDSObcaXWZ",
-    "webUrl": "http://localhost:8111/viewType.html?buildTypeId=test_eDSObcaXWZ",
-    "project": {
-        "id": "test_rblVkTySti",
-        "name": "test_okBkrjlKsU",
-        "parentProjectId": "_Root",
-        "href": "/app/rest/projects/id:test_rblVkTySti",
-        "webUrl": "http://localhost:8111/project.html?projectId=test_rblVkTySti"
-    },
-    "templates": {
-        "count": 0,
-        "buildType": [
-            
-        ]
-    },
-    "vcs-root-entries": {
-        "count": 0,
-        "vcs-root-entry": [
-            
-        ]
-    },
-    "settings": {
-        "property": [
-            {
-                "name": "buildNumberCounter",
-                "value": "1"
-            }
-        ],
-        "count": 1
-    },
-    "parameters": {
-        "property": [
-            
-        ],
-        "count": 0,
-        "href": "/app/rest/buildTypes/id:test_eDSObcaXWZ/parameters"
-    },
-    "steps": {
-        "count": 0
-    },
-    "features": {
-        "count": 0
-    },
-    "triggers": {
-        "count": 0
-    },
-    "snapshot-dependencies": {
-        "count": 0
-    },
-    "artifact-dependencies": {
-        "count": 0
-    },
-    "agent-requirements": {
-        "count": 0
-    },
-    "builds": {
-        "href": "/app/rest/buildTypes/id:test_eDSObcaXWZ/builds/"
-    },
-    "investigations": {
-        "href": "/app/rest/investigations?locator=buildType:(id:test_eDSObcaXWZ)"
-    },
-    "compatibleAgents": {
-        "href": "/app/rest/agents?locator=compatible:(buildType:(id:test_eDSObcaXWZ))"
-    },
-    "compatibleCloudImages": {
-        
-    }
-}
-]]></system-out>
-  </testcase>
-  <testcase name="userCreatesBuildTypeTest" classname="com.example.teamcity.api.BuildTypeTest" time="0.455">
-    <system-out><![CDATA[Request method:	DELETE
-Request URI:	http://172.17.0.1:8111/app/rest/buildTypes/test_eDSObcaXWZ
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 204 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=0F90E5DBC78E8E73065E9FFAD47A9F9A; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:34 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Date: Fri, 19 Dec 2025 17:51:24 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-Request method:	DELETE
-Request URI:	http://172.17.0.1:8111/app/rest/projects/test_rblVkTySti
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 204 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=E77E3FD3534BA52261204A4E6F081127; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:34 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Date: Fri, 19 Dec 2025 17:51:24 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-Request method:	DELETE
-Request URI:	http://172.17.0.1:8111/app/rest/users/8
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 404 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=9B01A8168DD0E8AAE353CD8DBA5D7435; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:34 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: text/plain
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:24 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-Responding with error, status code: 404 (Not Found).
-Details: jetbrains.buildServer.server.rest.errors.NotFoundException: User not found
-Could not find the entity requested. Check the reference is correct and the user has permissions to access the entity.
-Request method:	POST
-Request URI:	http://172.17.0.1:8111/app/rest/users
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": null,
-    "username": "test_uEbOclmHdo",
-    "password": "test_mAlGsrtDQD",
-    "roles": {
-        "role": [
-            {
-                "roleId": "SYSTEM_ADMIN",
-                "scope": "g"
-            }
-        ]
-    }
-}
-HTTP/1.1 200 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=D2731C9EF5ED6B06746E357C9D468FF2; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:34 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:24 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "username": "test_ueboclmhdo",
-    "id": 9,
-    "href": "/app/rest/users/id:9",
-    "properties": {
-        "property": [
-            {
-                "name": "addTriggeredBuildToFavorites",
-                "value": "true"
-            },
-            {
-                "name": "plugin:vcs:anyVcs:anyVcsRoot",
-                "value": "test_uEbOclmHdo"
-            },
-            {
-                "name": "teamcity.server.buildNumber",
-                "value": "147412"
-            }
-        ],
-        "count": 3,
-        "href": "/app/rest/users/id:9/properties"
-    },
-    "roles": {
-        "role": [
-            {
-                "roleId": "SYSTEM_ADMIN",
-                "scope": "g",
-                "href": "/app/rest/users/id:9/roles/SYSTEM_ADMIN/g"
-            }
-        ]
-    },
-    "groups": {
-        "count": 1,
-        "group": [
-            {
-                "key": "ALL_USERS_GROUP",
-                "name": "All Users",
-                "href": "/app/rest/userGroups/key:ALL_USERS_GROUP",
-                "description": "Contains all TeamCity users"
-            }
-        ]
-    }
-}
-Request method:	POST
-Request URI:	http://172.17.0.1:8111/app/rest/projects
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": "test_YhCvWhgMLW",
-    "name": "test_PpfrwzXpVw",
-    "locator": null
-}
-HTTP/1.1 200 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=D273F113A13C640568D298BD764D42EF; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:34 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:24 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "id": "test_YhCvWhgMLW",
-    "name": "test_PpfrwzXpVw",
-    "parentProjectId": "_Root",
-    "virtual": false,
-    "href": "/app/rest/projects/id:test_YhCvWhgMLW",
-    "webUrl": "http://localhost:8111/project.html?projectId=test_YhCvWhgMLW",
-    "parentProject": {
-        "id": "_Root",
-        "name": "<Root project>",
-        "description": "Contains all other projects",
-        "href": "/app/rest/projects/id:_Root",
-        "webUrl": "http://localhost:8111/project.html?projectId=_Root"
-    },
-    "buildTypes": {
-        "count": 0,
-        "buildType": [
-            
-        ]
-    },
-    "templates": {
-        "count": 0,
-        "buildType": [
-            
-        ]
-    },
-    "deploymentDashboards": {
-        "count": 0
-    },
-    "parameters": {
-        "property": [
-            
-        ],
-        "count": 0,
-        "href": "/app/rest/projects/id:test_YhCvWhgMLW/parameters"
-    },
-    "vcsRoots": {
-        "count": 0,
-        "href": "/app/rest/vcs-roots?locator=project:(id:test_YhCvWhgMLW)"
-    },
-    "projectFeatures": {
-        "count": 0,
-        "href": "/app/rest/projects/id:test_YhCvWhgMLW/projectFeatures"
-    },
-    "projects": {
-        "count": 0
-    }
-}
-Request method:	POST
-Request URI:	http://172.17.0.1:8111/app/rest/buildTypes
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": "test_kJUedlSELu",
-    "name": "test_xQAbADfnKX",
-    "project": {
-        "id": "test_YhCvWhgMLW",
-        "name": "test_PpfrwzXpVw",
-        "locator": null
-    },
-    "steps": null
-}
-HTTP/1.1 200 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=99C8D03086F8C9ADF6CA79FD9A5DBD6F; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:35 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:24 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "id": "test_kJUedlSELu",
-    "name": "test_xQAbADfnKX",
-    "projectName": "test_PpfrwzXpVw",
-    "projectId": "test_YhCvWhgMLW",
-    "href": "/app/rest/buildTypes/id:test_kJUedlSELu",
-    "webUrl": "http://localhost:8111/viewType.html?buildTypeId=test_kJUedlSELu",
-    "project": {
-        "id": "test_YhCvWhgMLW",
-        "name": "test_PpfrwzXpVw",
-        "parentProjectId": "_Root",
-        "href": "/app/rest/projects/id:test_YhCvWhgMLW",
-        "webUrl": "http://localhost:8111/project.html?projectId=test_YhCvWhgMLW"
-    },
-    "templates": {
-        "count": 0,
-        "buildType": [
-            
-        ]
-    },
-    "vcs-root-entries": {
-        "count": 0,
-        "vcs-root-entry": [
-            
-        ]
-    },
-    "settings": {
-        "property": [
-            {
-                "name": "buildNumberCounter",
-                "value": "1"
-            }
-        ],
-        "count": 1
-    },
-    "parameters": {
-        "property": [
-            
-        ],
-        "count": 0,
-        "href": "/app/rest/buildTypes/id:test_kJUedlSELu/parameters"
-    },
-    "steps": {
-        "count": 0
-    },
-    "features": {
-        "count": 0
-    },
-    "triggers": {
-        "count": 0
-    },
-    "snapshot-dependencies": {
-        "count": 0
-    },
-    "artifact-dependencies": {
-        "count": 0
-    },
-    "agent-requirements": {
-        "count": 0
-    },
-    "builds": {
-        "href": "/app/rest/buildTypes/id:test_kJUedlSELu/builds/"
-    },
-    "investigations": {
-        "href": "/app/rest/investigations?locator=buildType:(id:test_kJUedlSELu)"
-    },
-    "compatibleAgents": {
-        "href": "/app/rest/agents?locator=compatible:(buildType:(id:test_kJUedlSELu))"
-    },
-    "compatibleCloudImages": {
-        
-    }
-}
-Request method:	GET
-Request URI:	http://172.17.0.1:8111/app/rest/buildTypes/id%3Atest_kJUedlSELu
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=3C7E51DAC89D204233BBF24E06742C4A; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:35 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:24 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "id": "test_kJUedlSELu",
-    "name": "test_xQAbADfnKX",
-    "projectName": "test_PpfrwzXpVw",
-    "projectId": "test_YhCvWhgMLW",
-    "href": "/app/rest/buildTypes/id:test_kJUedlSELu",
-    "webUrl": "http://localhost:8111/viewType.html?buildTypeId=test_kJUedlSELu",
-    "project": {
-        "id": "test_YhCvWhgMLW",
-        "name": "test_PpfrwzXpVw",
-        "parentProjectId": "_Root",
-        "href": "/app/rest/projects/id:test_YhCvWhgMLW",
-        "webUrl": "http://localhost:8111/project.html?projectId=test_YhCvWhgMLW"
-    },
-    "templates": {
-        "count": 0,
-        "buildType": [
-            
-        ]
-    },
-    "vcs-root-entries": {
-        "count": 0,
-        "vcs-root-entry": [
-            
-        ]
-    },
-    "settings": {
-        "property": [
-            {
-                "name": "buildNumberCounter",
-                "value": "1"
-            }
-        ],
-        "count": 1
-    },
-    "parameters": {
-        "property": [
-            
-        ],
-        "count": 0,
-        "href": "/app/rest/buildTypes/id:test_kJUedlSELu/parameters"
-    },
-    "steps": {
-        "count": 0
-    },
-    "features": {
-        "count": 0
-    },
-    "triggers": {
-        "count": 0
-    },
-    "snapshot-dependencies": {
-        "count": 0
-    },
-    "artifact-dependencies": {
-        "count": 0
-    },
-    "agent-requirements": {
-        "count": 0
-    },
-    "builds": {
-        "href": "/app/rest/buildTypes/id:test_kJUedlSELu/builds/"
-    },
-    "investigations": {
-        "href": "/app/rest/investigations?locator=buildType:(id:test_kJUedlSELu)"
-    },
-    "compatibleAgents": {
-        "href": "/app/rest/agents?locator=compatible:(buildType:(id:test_kJUedlSELu))"
-    },
-    "compatibleCloudImages": {
-        
-    }
-}
-]]></system-out>
-  </testcase>
-  <testcase name="userCreatesTwoBuildTypesWithTheSameIdTest" classname="com.example.teamcity.api.BuildTypeTest" time="0.498">
-    <system-out><![CDATA[Request method:	DELETE
-Request URI:	http://172.17.0.1:8111/app/rest/buildTypes/test_kJUedlSELu
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 204 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=FE3F2BF6BE3D8ADCF9F9D737CF53C948; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:35 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Date: Fri, 19 Dec 2025 17:51:24 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-Request method:	DELETE
-Request URI:	http://172.17.0.1:8111/app/rest/projects/test_YhCvWhgMLW
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 204 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=4E55243837A7CFEA319287903FFBF9D7; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:35 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Date: Fri, 19 Dec 2025 17:51:24 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-Request method:	DELETE
-Request URI:	http://172.17.0.1:8111/app/rest/users/9
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 404 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=9346787FF3646DBD2985840FF0D4BDAB; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:35 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: text/plain
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:24 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-Responding with error, status code: 404 (Not Found).
-Details: jetbrains.buildServer.server.rest.errors.NotFoundException: User not found
-Could not find the entity requested. Check the reference is correct and the user has permissions to access the entity.
-Request method:	POST
-Request URI:	http://172.17.0.1:8111/app/rest/users
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": null,
-    "username": "test_zMKEMVebVq",
-    "password": "test_rMziOeRFIt",
-    "roles": {
-        "role": [
-            {
-                "roleId": "SYSTEM_ADMIN",
-                "scope": "g"
-            }
-        ]
-    }
-}
-HTTP/1.1 200 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=B1E17CD36B9CBD9C00950B25CD720D27; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:35 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:25 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "username": "test_zmkemvebvq",
-    "id": 10,
-    "href": "/app/rest/users/id:10",
-    "properties": {
-        "property": [
-            {
-                "name": "addTriggeredBuildToFavorites",
-                "value": "true"
-            },
-            {
-                "name": "plugin:vcs:anyVcs:anyVcsRoot",
-                "value": "test_zMKEMVebVq"
-            },
-            {
-                "name": "teamcity.server.buildNumber",
-                "value": "147412"
-            }
-        ],
-        "count": 3,
-        "href": "/app/rest/users/id:10/properties"
-    },
-    "roles": {
-        "role": [
-            {
-                "roleId": "SYSTEM_ADMIN",
-                "scope": "g",
-                "href": "/app/rest/users/id:10/roles/SYSTEM_ADMIN/g"
-            }
-        ]
-    },
-    "groups": {
-        "count": 1,
-        "group": [
-            {
-                "key": "ALL_USERS_GROUP",
-                "name": "All Users",
-                "href": "/app/rest/userGroups/key:ALL_USERS_GROUP",
-                "description": "Contains all TeamCity users"
-            }
-        ]
-    }
-}
-Request method:	POST
-Request URI:	http://172.17.0.1:8111/app/rest/projects
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": "test_ohBLcNedTj",
-    "name": "test_hbTXEoDMlI",
-    "locator": null
-}
-HTTP/1.1 200 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=5908A7720AF7E159A0275DDF3918E87E; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:35 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:25 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "id": "test_ohBLcNedTj",
-    "name": "test_hbTXEoDMlI",
-    "parentProjectId": "_Root",
-    "virtual": false,
-    "href": "/app/rest/projects/id:test_ohBLcNedTj",
-    "webUrl": "http://localhost:8111/project.html?projectId=test_ohBLcNedTj",
-    "parentProject": {
-        "id": "_Root",
-        "name": "<Root project>",
-        "description": "Contains all other projects",
-        "href": "/app/rest/projects/id:_Root",
-        "webUrl": "http://localhost:8111/project.html?projectId=_Root"
-    },
-    "buildTypes": {
-        "count": 0,
-        "buildType": [
-            
-        ]
-    },
-    "templates": {
-        "count": 0,
-        "buildType": [
-            
-        ]
-    },
-    "deploymentDashboards": {
-        "count": 0
-    },
-    "parameters": {
-        "property": [
-            
-        ],
-        "count": 0,
-        "href": "/app/rest/projects/id:test_ohBLcNedTj/parameters"
-    },
-    "vcsRoots": {
-        "count": 0,
-        "href": "/app/rest/vcs-roots?locator=project:(id:test_ohBLcNedTj)"
-    },
-    "projectFeatures": {
-        "count": 0,
-        "href": "/app/rest/projects/id:test_ohBLcNedTj/projectFeatures"
-    },
-    "projects": {
-        "count": 0
-    }
-}
-Request method:	POST
-Request URI:	http://172.17.0.1:8111/app/rest/buildTypes
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": "test_zzcqeSfBVb",
-    "name": "test_goFrZQmOGR",
-    "project": {
-        "id": "test_ohBLcNedTj",
-        "name": "test_hbTXEoDMlI",
-        "locator": null
-    },
-    "steps": null
-}
-HTTP/1.1 200 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=0675E9E48C6AEF7BF78412E78848B34E; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:35 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:25 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "id": "test_zzcqeSfBVb",
-    "name": "test_goFrZQmOGR",
-    "projectName": "test_hbTXEoDMlI",
-    "projectId": "test_ohBLcNedTj",
-    "href": "/app/rest/buildTypes/id:test_zzcqeSfBVb",
-    "webUrl": "http://localhost:8111/viewType.html?buildTypeId=test_zzcqeSfBVb",
-    "project": {
-        "id": "test_ohBLcNedTj",
-        "name": "test_hbTXEoDMlI",
-        "parentProjectId": "_Root",
-        "href": "/app/rest/projects/id:test_ohBLcNedTj",
-        "webUrl": "http://localhost:8111/project.html?projectId=test_ohBLcNedTj"
-    },
-    "templates": {
-        "count": 0,
-        "buildType": [
-            
-        ]
-    },
-    "vcs-root-entries": {
-        "count": 0,
-        "vcs-root-entry": [
-            
-        ]
-    },
-    "settings": {
-        "property": [
-            {
-                "name": "buildNumberCounter",
-                "value": "1"
-            }
-        ],
-        "count": 1
-    },
-    "parameters": {
-        "property": [
-            
-        ],
-        "count": 0,
-        "href": "/app/rest/buildTypes/id:test_zzcqeSfBVb/parameters"
-    },
-    "steps": {
-        "count": 0
-    },
-    "features": {
-        "count": 0
-    },
-    "triggers": {
-        "count": 0
-    },
-    "snapshot-dependencies": {
-        "count": 0
-    },
-    "artifact-dependencies": {
-        "count": 0
-    },
-    "agent-requirements": {
-        "count": 0
-    },
-    "builds": {
-        "href": "/app/rest/buildTypes/id:test_zzcqeSfBVb/builds/"
-    },
-    "investigations": {
-        "href": "/app/rest/investigations?locator=buildType:(id:test_zzcqeSfBVb)"
-    },
-    "compatibleAgents": {
-        "href": "/app/rest/agents?locator=compatible:(buildType:(id:test_zzcqeSfBVb))"
-    },
-    "compatibleCloudImages": {
-        
-    }
-}
-Request method:	POST
-Request URI:	http://172.17.0.1:8111/app/rest/buildTypes
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-				Content-Type=application/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": "test_zzcqeSfBVb",
-    "name": "test_hZFbrEgsRa",
-    "project": {
-        "id": "test_ohBLcNedTj",
-        "name": "test_hbTXEoDMlI",
-        "locator": null
-    },
-    "steps": null
-}
-HTTP/1.1 400 
-TeamCity-Node-Id: MAIN_SERVER
-Set-Cookie: TCSESSIONID=1D5A1F62E0980881554310C0EE66F65E; Path=/; HttpOnly
-Set-Cookie: RecentLogin=; Max-Age=10; Expires=Fri, 19 Dec 2025 17:51:35 GMT; Path=/
-Set-Cookie: RememberMe=; Max-Age=0; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/; HttpOnly
-Cache-Control: no-store
-Content-Type: text/plain
-Transfer-Encoding: chunked
-Date: Fri, 19 Dec 2025 17:51:25 GMT
-Connection: close
-
-Responding with error, status code: 400 (Bad Request).
-Details: jetbrains.buildServer.serverSide.identifiers.DuplicateExternalIdException: The build configuration / template ID "test_zzcqeSfBVb" is already used by another configuration or template
-Error occurred while processing this request.
+17:52:01.486 [main] INFO com.codeborne.selenide.impl.WebDriverThreadLocalContainer - No webdriver is bound to current thread: 1 - let's create a new webdriver
+17:52:01.486 [main] DEBUG com.codeborne.selenide.drivercommands.CreateDriverCommand - Creating webdriver in thread 1 (ip: 10.1.0.164, host: runnervmh13bl)...
+17:52:01.486 [main] DEBUG com.codeborne.selenide.webdriver.WebDriverFactory - browser=chrome
+17:52:01.486 [main] DEBUG com.codeborne.selenide.webdriver.WebDriverFactory - browser.version=null
+17:52:01.486 [main] DEBUG com.codeborne.selenide.webdriver.WebDriverFactory - remote=http://localhost:4444/wd/hub
+17:52:01.486 [main] DEBUG com.codeborne.selenide.webdriver.WebDriverFactory - browserSize=1920x1080
+17:52:01.490 [main] DEBUG com.codeborne.selenide.webdriver.AbstractChromiumDriverFactory - Using chromium preferences: {credentials_enable_service=false, autofill.credit_card_enabled=false, autofill.profile_enabled=false, safebrowsing.enabled=true, plugins.always_open_pdf_externally=true, profile.default_content_setting_values.automatic_downloads=1, profile.password_manager_enabled=false, profile.password_manager_leak_detection=false}
+17:52:02.853 [main] INFO com.codeborne.selenide.webdriver.WebDriverFactory - BrowserName=chrome Version=122.0.6261.94 Platform=linux
+17:52:02.853 [main] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenide v. 7.4.3
+17:52:02.853 [main] INFO com.codeborne.selenide.webdriver.WebDriverFactory - Selenium WebDriver v. 4.24.0 build revision: 748ffc9bc3
+17:52:02.853 [main] INFO com.codeborne.selenide.drivercommands.CreateDriverCommand - Created webdriver in thread 1: RemoteWebDriver -> RemoteWebDriver: chrome on linux (87337171f377307688c89c1de5a27252), downloadsFolder: null
+17:52:02.853 [main] INFO com.codeborne.selenide.drivercommands.DisposablesRegistry - Register WebDriverInstance[config=StaticConfig, webDriver=RemoteWebDriver: chrome on linux (87337171f377307688c89c1de5a27252), proxy=null, downloadsFolder=null] in 1 [size=1]
 ]]></system-out>
   </testcase>
 </testsuite>
