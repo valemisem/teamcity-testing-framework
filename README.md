@@ -1,6 +1,5 @@
 
 
-
 ## Test Reports (Allure)
 
 This project uses **Allure Report** to visualize test execution results and history.
