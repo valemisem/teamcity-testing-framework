@@ -16,4 +16,3 @@ https://valemisem.github.io/teamcity-testing-framework/api/
 
 ### UI Tests Report
 https://valemisem.github.io/teamcity-testing-framework/ui/
-
