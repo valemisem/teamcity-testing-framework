@@ -38,6 +38,7 @@ public class Specifications {
         reqBuilder.addFilter(new SwaggerCoverageRestAssured(
                 new FileSystemOutputWriter(Paths.get("target/" + OUTPUT_DIRECTORY))
         ));
+
         return reqBuilder;
     } // Какие endpoint’ы из Swagger реально были вызваны тестами, а какие — нет?
     // target/ — это стандартная папка Maven, используется для артефактов сборки и отчётов
