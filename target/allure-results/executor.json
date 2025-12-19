@@ -1,9 +1,0 @@
-{
-    "name": "GitHub Action: TeamCity deployment",
-    "type": "github",
-    "reportName": "Allure Test Report",
-    "reportUrl": "https://valemisem.github.io/teamcity-testing-framework/ui/19/index.html",
-    "buildUrl": "https://github.com/valemisem/teamcity-testing-framework/actions/runs/20378010975",
-    "buildName": "GitHub Actions Run #20378010975",
-    "buildOrder": "19"
-}
