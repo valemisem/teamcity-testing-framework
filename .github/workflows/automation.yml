@@ -65,32 +65,34 @@ jobs:
             swagger-coverage-report.html
             swagger-coverage-results.json
 
-      # Загружаем историю Allure Report с специальной ветки gh-pages (https://allurereport.org/docs/integrations-github/)
-      - name: Load test report history
-        uses: actions/checkout@v2
+      # Загружаем историю Allure Report из ветки gh-pages
+      - name: Checkout GitHub Pages with previous Allure reports
+        uses: actions/checkout@v4
         if: always()
         continue-on-error: true
         with:
           ref: gh-pages
-          path: gh-pages
+          path: gh-pages-dir
 
-      - name: Build test report
-        uses: simple-elf/allure-report-action@v1.10
+      # Генерируем Allure Report (с учётом истории)
+      - name: Generate Allure test report
+        id: allure-report
+        uses: andgineer/allure-report@v3.6
         if: always()
         with:
-          gh_pages: gh-pages
-          allure_history: allure-history
-          allure_results: target/allure-results
-          subfolder: ${{ inputs.package }}
+          allure-results: target/allure-results
+          website: gh-pages-dir
+          reports-site-path: ${{ inputs.package }}   # api / ui
 
-      # Создаем пустую ветку gh-pages на основе инструкции https://gist.github.com/ramnathv/2227408
-      - name: Publish test report
+      # Публикуем отчёт в GitHub Pages
+      - name: Publish Allure test report
         uses: peaceiris/actions-gh-pages@v3
         if: always()
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: allure-history
+          publish_dir: ${{ steps.allure-report.outputs.reports-site }}
+          destination_dir: ${{ steps.allure-report.outputs.reports-site-path }}
 
 
 
