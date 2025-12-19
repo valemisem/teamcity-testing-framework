@@ -19,6 +19,6 @@ public abstract class CreateBasePage extends BasePage {
         urlInput.shouldBe(Condition.visible, BASE_WAITING);
         urlInput.val(url);
         submitButton.click();
-        connectionSuccessfulMessage.should(Condition.appear, LONG_WAITING);
+        connectionSuccessfulMessage.should(Condition.appear, BASE_WAITING);
     }
 }
