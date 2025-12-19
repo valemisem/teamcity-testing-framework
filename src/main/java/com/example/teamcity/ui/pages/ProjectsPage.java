@@ -12,9 +12,7 @@ public class ProjectsPage extends BasePage {
     private static final String PROJECTS_URL = "/favorite/projects";
 
     public ElementsCollection projectElements = $$("div[class*='Subproject__container']");
-
-    //    private SelenideElement header = $("span[class*='ProjectPageHeader__title']"); // only for local setup with existing projects
-    private SelenideElement header = $("a[data-test='create-project']");
+    private SelenideElement header = $("span[class*='ProjectPageHeader__title']");
 
     public static ProjectsPage open() {
         return Selenide.open(PROJECTS_URL, ProjectsPage.class);
@@ -25,7 +23,7 @@ public class ProjectsPage extends BasePage {
     }
 
     public ProjectsPage waitForProjects() {
-        projectElements.shouldHave(CollectionCondition.sizeGreaterThanOrEqual(1), BASE_WAITING);
+        projectElements.shouldHave(CollectionCondition.sizeGreaterThanOrEqual(1), LONG_WAITING);
         return this;
     }
 

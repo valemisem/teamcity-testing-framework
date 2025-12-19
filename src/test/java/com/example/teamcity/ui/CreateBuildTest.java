@@ -7,7 +7,10 @@ import com.example.teamcity.api.requests.CheckedRequests;
 import com.example.teamcity.api.spec.Specifications;
 import com.example.teamcity.ui.pages.ProjectPage;
 import com.example.teamcity.ui.pages.admin.CreateBuildConfigPage;
+import com.example.teamcity.ui.pages.admin.CreateBuildStepsPage;
 import org.testng.annotations.Test;
+
+import static com.codeborne.selenide.Selenide.page;
 
 @Test(groups = {"Regression"})
 public class CreateBuildTest extends BaseUiTest {
@@ -21,6 +24,8 @@ public class CreateBuildTest extends BaseUiTest {
         var createdProjectId = requests.<Project>getRequest(Endpoint.PROJECT).read("id:" + testData.getProject().getId());
 
         CreateBuildConfigPage.open(createdProjectId.getId()).createForm(GIT_URL).setupBuild(testData.getBuildType().getName());
+        page(CreateBuildStepsPage.class).shouldBeOpened();
+
         var createdBuild = requests.<BuildType>getRequest(Endpoint.BUILD_TYPES).read("name:" + testData.getBuildType().getName());
         softy.assertNotNull(createdBuild);
 
@@ -37,6 +42,11 @@ public class CreateBuildTest extends BaseUiTest {
         requests.<Project>getRequest(Endpoint.PROJECT).create(testData.getProject());
         var createdProjectId = requests.<Project>getRequest(Endpoint.PROJECT).read("id:" + testData.getProject().getId());
 
-        CreateBuildConfigPage.open(createdProjectId.getId()).createForm(GIT_URL).setupBuild(null).verifyBuildName();
+        CreateBuildConfigPage configPage =
+                CreateBuildConfigPage.open(createdProjectId.getId())
+                        .createForm(GIT_URL);
+        configPage.setupBuild(null);
+        configPage.shouldBeOpened().verifyBuildName();
+
     }
 }

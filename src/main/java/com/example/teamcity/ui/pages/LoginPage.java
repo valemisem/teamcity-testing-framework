@@ -16,12 +16,11 @@ public class LoginPage extends BasePage {
         return Selenide.open(LOGIN_URL, LoginPage.class);
     }
 
-    public ProjectsPage login(User user) {
+    public WelcomePage login(User user) {
         // метод val (clear, sendKeys)
         usernameInput.val(user.getUsername());
         passwordInput.val(user.getPassword());
         loginButton.click();
-
-        return Selenide.page(ProjectsPage.class);
+        return Selenide.page(WelcomePage.class);
     }
 }

@@ -21,10 +21,10 @@ public class BaseTest {
         testData = generate();
     }
 
-//    @AfterMethod(alwaysRun = true)
-//    public void afterTest() {
-//        softy.assertAll();
-//        TestDataStorage.getStorage().deleteCreatedEntities();
-//    }
+    @AfterMethod(alwaysRun = true)
+    public void afterTest() {
+        softy.assertAll();
+        TestDataStorage.getStorage().deleteCreatedEntities();
+    }
 
 }

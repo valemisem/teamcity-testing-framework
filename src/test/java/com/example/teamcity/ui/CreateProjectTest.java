@@ -5,8 +5,11 @@ import com.example.teamcity.api.enums.Endpoint;
 import com.example.teamcity.api.models.Project;
 import com.example.teamcity.ui.pages.ProjectPage;
 import com.example.teamcity.ui.pages.ProjectsPage;
+import com.example.teamcity.ui.pages.admin.CreateBuildStepsPage;
 import com.example.teamcity.ui.pages.admin.CreateProjectPage;
 import org.testng.annotations.Test;
+
+import static com.codeborne.selenide.Selenide.page;
 
 @Test(groups = {"Regression"})
 public class CreateProjectTest extends BaseUiTest {
@@ -21,7 +24,7 @@ public class CreateProjectTest extends BaseUiTest {
         CreateProjectPage.open("_Root")
                 .createForm(GIT_URL)
                 .setupProject(testData.getProject().getName(), testData.getBuildType().getName());
-
+        page(CreateBuildStepsPage.class).shouldBeOpened();
         // проверка состояния АПИ (корректность отправки данных с UI на API)
         // API: project with name, buildType for this project with buildType name
         var createdProject = superUserCheckRequests.<Project>getRequest(Endpoint.PROJECT).read("name:" + testData.getProject().getName());
