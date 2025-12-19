@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selenide.page;
 
 @Test(groups = {"Regression"})
 public class CreateProjectTest extends BaseUiTest {
-    private static final String GIT_URL = "https://github.com/valemisem/mapal-testing";
+    private static final String GIT_URL = "https://github.com/valemisem/nobugs-java";
 
     @Test(description = "User should be able to create project", groups = {"Positive"})
     public void userCreatesProject() {
