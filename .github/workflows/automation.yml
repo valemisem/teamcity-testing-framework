@@ -72,27 +72,35 @@ jobs:
         continue-on-error: true
         with:
           ref: gh-pages
-          path: gh-pages-dir
+          path: gh-pages
 
-      # Генерируем Allure Report (с учётом истории)
-      - name: Generate Allure test report
-        id: allure-report
-        uses: andgineer/allure-report@v3.6
+      # Устанавливаем Allure CLI
+      - name: Install Allure CLI
         if: always()
-        with:
-          allure-results: target/allure-results
-          website: gh-pages-dir
-          reports-site-path: ${{ inputs.package }}   # api / ui
+        run: |
+          curl -L -o allure.tgz https://github.com/allure-framework/allure2/releases/download/2.29.0/allure-2.29.0.tgz
+          tar -xzf allure.tgz
+          sudo mv allure-2.29.0 /opt/allure
+          sudo ln -s /opt/allure/bin/allure /usr/bin/allure
+
+      # Генерируем Allure Report с историей
+      - name: Generate Allure report
+        if: always()
+        run: |
+          mkdir -p allure-history/${{ inputs.package }}
+          allure generate target/allure-results \
+            -o allure-history/${{ inputs.package }} \
+            --clean
 
       # Публикуем отчёт в GitHub Pages
-      - name: Publish Allure test report
+      - name: Publish Allure report
         uses: peaceiris/actions-gh-pages@v3
         if: always()
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: ${{ steps.allure-report.outputs.reports-site }}
-          destination_dir: ${{ steps.allure-report.outputs.reports-site-path }}
+          publish_dir: allure-history
+
 
 
 
