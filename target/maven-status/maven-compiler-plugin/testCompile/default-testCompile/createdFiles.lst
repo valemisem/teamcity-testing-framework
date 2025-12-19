@@ -1,0 +1,11 @@
+com/example/teamcity/api/BaseApiTest.class
+com/example/teamcity/api/DummyTestCheckAuth.class
+com/example/teamcity/api/DummyTest.class
+com/example/teamcity/BaseTest.class
+com/example/teamcity/api/ProjectTest.class
+com/example/teamcity/common/WireMock.class
+com/example/teamcity/ui/SetupServerTest.class
+com/example/teamcity/ui/CreateProjectTest.class
+com/example/teamcity/ui/CreateBuildTest.class
+com/example/teamcity/ui/BaseUiTest.class
+com/example/teamcity/api/BuildTypeTest.class
