@@ -20,6 +20,8 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.example.teamcity.ui.pages.BasePage.BASE_WAITING;
 
 public class BaseUiTest extends BaseTest {
+    protected static final String GIT_URL = "https://github.com/valemisem/nobugs-java";
+
     @BeforeSuite(alwaysRun = true)
     public void setupUiTest() {
         Configuration.browser = Config.getProperty("browser");
