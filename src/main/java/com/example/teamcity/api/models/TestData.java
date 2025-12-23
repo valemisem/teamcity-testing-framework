@@ -9,4 +9,5 @@ public class TestData {
     private User user;
     private User anotherUser;
     private BuildType buildType;
+    private Step step;
 }

@@ -8,6 +8,8 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
+import java.util.Map;
+
 public class UncheckedBase extends Request implements CrudInterface {
     public UncheckedBase(RequestSpecification spec, Endpoint endpoint) { // параметризирован по спецификации и эндпоинту
         super(spec, endpoint);
@@ -18,6 +20,15 @@ public class UncheckedBase extends Request implements CrudInterface {
         return RestAssured
                 .given()
                 .spec(spec)
+                .body(model)
+                .post(endpoint.getUrl());
+    }
+
+    public Response create(BaseModel model, Map<String, String> pathParams) {
+        return RestAssured
+                .given()
+                .spec(spec)
+                .pathParams(pathParams)
                 .body(model)
                 .post(endpoint.getUrl());
     }
@@ -45,5 +56,13 @@ public class UncheckedBase extends Request implements CrudInterface {
                 .given()
                 .spec(spec)
                 .delete(endpoint.getUrl() + "/" + locator);
+    }
+
+    public Response delete(String locator, Map<String, String> pathParams) {
+        return RestAssured
+                .given()
+                .spec(spec)
+                .pathParams(pathParams)
+                .delete(endpoint.getUrl() + "/{locator}", locator);
     }
 }
