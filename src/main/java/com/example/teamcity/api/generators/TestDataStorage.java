@@ -18,13 +18,7 @@ public class TestDataStorage {
         createdEntitiesMap = new EnumMap<>(Endpoint.class);
     }
 
-    private static final Endpoint[] DELETE_ORDER = new Endpoint[]{
-            Endpoint.STEP,        // сначала зависимые
-            Endpoint.BUILD_TYPES,
-            Endpoint.PROJECT,
-            Endpoint.USERS        // потом «родители»
-    };
-
+    ;
 
     public static TestDataStorage getStorage() {
         if (testDataStorage == null) {
@@ -63,29 +57,14 @@ public class TestDataStorage {
         addCreatedEntity(endpoint, getEntityIdOrLocator(model));
     }
 
-//    public void deleteCreatedEntities() {
-//        createdEntitiesMap.forEach(((endpoint, ids) ->
-//                        ids.forEach(id ->
-//                                new UncheckedBase(Specifications.getSpec().superUserAuth(), endpoint).delete(id)
-//                        )
-//                )
-//
-//        );
-//
-//        createdEntitiesMap.clear();
-//    }
-
     public void deleteCreatedEntities() {
-        var spec = Specifications.getSpec().superUserAuth();
+        createdEntitiesMap.forEach(((endpoint, ids) ->
+                        ids.forEach(id ->
+                                new UncheckedBase(Specifications.getSpec().superUserAuth(), endpoint).delete(id)
+                        )
+                )
 
-        for (var endpoint : DELETE_ORDER) {
-            var ids = createdEntitiesMap.get(endpoint);
-            if (ids == null || ids.isEmpty()) continue;
-
-            ids.forEach(id ->
-                    new UncheckedBase(spec, endpoint).delete(id)
-            );
-        }
+        );
 
         createdEntitiesMap.clear();
     }

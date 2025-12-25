@@ -16,6 +16,7 @@ public class EditBuildPage extends EditBasePage {
             .closest("span")
             .$("button");
     protected SelenideElement scriptCommand = $(Selectors.byName("prop:command.executable"));
+    protected ElementsCollection steps = $$("tr.editBuildStepRow");
 
     public static EditBuildPage open(String buildId) {
         return Selenide.open(EDIT_BUILD_URL.formatted(buildId), EditBuildPage.class);
@@ -29,7 +30,7 @@ public class EditBuildPage extends EditBasePage {
         return generalSettings(name, id);
     }
 
-    public void addCommandLineStep(BuildStepData buildStepData) {
+    public EditBuildPage addCommandLineStep(BuildStepData buildStepData) {
         runTypeTub.click();
         header.should(Condition.appear, BASE_WAITING)
                 .shouldHave(Condition.exactText("Build Steps"));
@@ -45,6 +46,18 @@ public class EditBuildPage extends EditBasePage {
                 .shouldBe(Condition.visible, BASE_WAITING)
                 .click();
         scriptCommand.val(buildStepData.getScript());
+        /**
+         * Executable: bash
+         * Parameters: echo "Build step started"
+         */
         saveButton.shouldBe(Condition.visible, BASE_WAITING).click();
+        return this;
+    }
+
+    public void showBuildSteps(String stepName) {
+        runTypeTub.click();
+        header.should(Condition.appear, BASE_WAITING)
+                .shouldHave(Condition.exactText("Build Steps"));
+        steps.findBy(Condition.text(stepName));
     }
 }

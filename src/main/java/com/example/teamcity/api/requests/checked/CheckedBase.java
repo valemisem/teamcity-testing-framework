@@ -41,7 +41,7 @@ public final class CheckedBase<T extends BaseModel> extends Request implements C
                 .extract().as(endpoint.getModelClass()); // Конвертирует JSON-ответ обратно в объект типа User
         // десериализация JSON → объект
 
-        TestDataStorage.getStorage().addCreatedEntity(endpoint, createdModel);
+//        TestDataStorage.getStorage().addCreatedEntity(endpoint, createdModel);
         return createdModel;
     }
 
@@ -51,6 +51,25 @@ public final class CheckedBase<T extends BaseModel> extends Request implements C
                 .read(id)
                 .then().assertThat().statusCode(HttpStatus.SC_OK)
                 .extract().as(endpoint.getModelClass());
+    }
+
+    public T read(String id, Map<String, String> pathParams) {
+        return (T) uncheckedBase
+                .read(id, pathParams)
+                .then().assertThat().statusCode(HttpStatus.SC_OK)
+                .extract().as(endpoint.getModelClass());
+    }
+
+    public <R extends BaseModel> R readAll(
+            Map<String, String> pathParams,
+            Class<R> responseClass
+    ) {
+        return uncheckedBase
+                .readAll(pathParams)
+                .then()
+                .assertThat().statusCode(HttpStatus.SC_OK)
+                .extract()
+                .as(responseClass);
     }
 
     @Override
@@ -70,9 +89,9 @@ public final class CheckedBase<T extends BaseModel> extends Request implements C
                 .extract().asString();
     }
 
-    public Object delete(String id, Map<String, String> pathParams) {
+    public Object delete(Map<String, String> pathParams, String id) {
         return uncheckedBase
-                .delete(id, pathParams)
+                .delete(pathParams, id)
                 .then().assertThat().statusCode(HttpStatus.SC_OK)
                 .extract().asString();
     }

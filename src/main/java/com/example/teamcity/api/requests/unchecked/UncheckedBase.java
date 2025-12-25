@@ -41,6 +41,22 @@ public class UncheckedBase extends Request implements CrudInterface {
                 .get(endpoint.getUrl() + "/" + locator);
     }
 
+    public Response read(String locator, Map<String, String> pathParams) {
+        return RestAssured
+                .given()
+                .spec(spec)
+                .pathParams(pathParams)
+                .get(endpoint.getUrl() + "/" + locator);
+    }
+
+    public Response readAll(Map<String, String> pathParams) {
+        return RestAssured
+                .given()
+                .spec(spec)
+                .pathParams(pathParams)
+                .get(endpoint.getUrl());
+    }
+
     @Override
     public Response update(String locator, BaseModel model) {
         return RestAssured
@@ -58,11 +74,11 @@ public class UncheckedBase extends Request implements CrudInterface {
                 .delete(endpoint.getUrl() + "/" + locator);
     }
 
-    public Response delete(String locator, Map<String, String> pathParams) {
+    public Response delete(Map<String, String> pathParams, String locator) {
         return RestAssured
                 .given()
                 .spec(spec)
                 .pathParams(pathParams)
-                .delete(endpoint.getUrl() + "/{locator}", locator);
+                .delete(endpoint.getUrl() + "/" + locator);
     }
 }
